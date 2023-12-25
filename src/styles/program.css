@@ -1,0 +1,135 @@
+:root {
+  --head-text: #1e298d;
+  --main-text: #5e64e9;
+  --white-text: #fff;
+  --sub-text: #363de3;
+  --red-background: #de2219;
+  --green-background: #dff2dc;
+  --head-table: #f9d5d5;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.inactive-text {
+  color: #999;
+}
+
+.active-text {
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.red-text {
+  color: var(--red-background);
+}
+
+.block__main-upper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block__main-upper-left {
+  gap: 1rem;
+}
+
+.block__main-upper-left--first {
+  transition-duration: 0.3s;
+  padding: 1rem;
+  background-color: var(--white-text);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 195px;
+  position: relative;
+  text-align: center;
+}
+
+.block__main-upper-left--first:hover {
+  opacity: 0.7;
+}
+
+.block__main-upper-left--first_underline {
+  background-color: var(--red-background);
+  height: 2px;
+  left: 0;
+  bottom: -0.25rem;
+  position: absolute;
+  width: 100%;
+}
+
+.block__main-upper--right:hover {
+  opacity: 0.7;
+}
+
+.block__main-upper--right {
+  transition-duration: 0.3s;
+  border-radius: 0.5rem;
+  background-color: var(--white-text);
+  cursor: pointer;
+  min-width: 195px;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.block__main-upper-right {
+  gap: 1rem;
+}
+
+.block__main-upper-right--item {
+  transition-duration: 0.3s;
+  padding: 0.75rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  cursor: pointer;
+
+  span {
+    font-weight: 600;
+    color: #4c4c4c;
+  }
+}
+
+.block__main-upper-right--item:hover {
+  opacity: 0.7;
+}
+
+.block__program-introduce--wrapper {
+  background-color: var(--white-text);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  padding: 2rem 2.5rem;
+}
+
+.block__program-introduce-image-wrapper {
+  margin: 1rem auto;
+}
+
+.block__program-introduce-image {
+  width: 250px;
+  height: 200px;
+  background: url("../img/programIntroduce.png") no-repeat center;
+  background-size: 100% 100%;
+}
