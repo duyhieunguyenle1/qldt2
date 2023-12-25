@@ -606,6 +606,228 @@ if(programBtn&&programIntroductBtn){
 </div>
     `
 
+    tableProgram.innerHTML=`
+    <div class="flex flex-col">
+                        <div class="flex flex-col block__program-main-container main_shadow">
+                            <h4 class="block__program-main-container--head">
+                                Học kỳ 1 - Năm học 2021-2022
+                            </h4>
+                            <div class="block__program-main-container--table">
+                                <table>
+                                    <thead>
+                                        <tr class="block__program-main-table--head">
+                                            <th>STT</th>
+                                            <th>Mã MH</th>
+                                            <th>Tên môn</th>
+                                            <th>Số TC</th>
+                                            <th>Môn bắt buộc</th>
+                                            <th>Đã học</th>
+                                            <th>Tổng tiết</th>
+                                            <th>Lý thuyết</th>
+                                            <th>Thực hành</th>
+                                            <th>Tiết thực hành</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>BAS1105M</td>
+                                            <td class="text-base">Giáo dục quốc phòng</td>
+                                            <td>7.5</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>BAS1106</td>
+                                            <td class="text-base">Giáo dục thể chất 1</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>2</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>BAS1150</td>
+                                            <td class="text-base">Triết học Mác - Lênin</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>45</td>
+                                            <td>34</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>BAS1219</td>
+                                            <td class="text-base">Toán cao cấp 1</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>24</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>INT1154</td>
+                                            <td class="text-base">Tin học cơ sở 1</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>20</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>MUL1238</td>
+                                            <td class="text-base">Cơ sở tạo hình</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>45</td>
+                                            <td>32</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>MUL1320</td>
+                                            <td class="text-base">Nhập môn đa phương tiện</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>24</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <div class="flex flex-col block__program-main-container main_shadow">
+                            <h4 class="block__program-main-container--head">
+                                Học kỳ 2 - Năm học 2021-2022
+                            </h4>
+                            <div class="block__program-main-container--table">
+                                <table>
+                                    <thead>
+                                        <tr class="block__program-main-table--head">
+                                            <th>STT</th>
+                                            <th>Mã MH</th>
+                                            <th>Tên môn</th>
+                                            <th>Số TC</th>
+                                            <th>Môn bắt buộc</th>
+                                            <th>Đã học</th>
+                                            <th>Tổng tiết</th>
+                                            <th>Lý thuyết</th>
+                                            <th>Thực hành</th>
+                                            <th>Tiết thực hành</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>BAS1107</td>
+                                            <td class="text-base">Giáo dục thể chất 2</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>2</td>
+                                            <td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>BAS1151</td>
+                                            <td class="text-base">Kinh tế chính trị Mác - Lênin</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>28</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>BAS1157</td>
+                                            <td class="text-base">Tiếng Anh (Course 1)</td>
+                                            <td>4</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>60</td>
+                                            <td>48</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>BAS1220</td>
+                                            <td class="text-base">Toán cao cấp 2</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>24</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>INT1155</td>
+                                            <td class="text-base">Tin học cơ sở 2</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>30</td>
+                                            <td>20</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>MUL13122</td>
+                                            <td class="text-base">Kỹ thuật nhiếp ảnh</td>
+                                            <td>2</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>35</td>
+                                            <td>28</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>MUL13149</td>
+                                            <td class="text-base">Mỹ thuật cơ bản</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>42</td>
+                                            <td>28</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>MUL13150</td>
+                                            <td class="text-base">Thiết kế đồ họa</td>
+                                            <td>3</td>
+                                            <td></td>
+                                            <td>X</td>
+                                            <td>40</td>
+                                            <td>24</td>
+                                            <td>16</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+    `
+
+    $('.block__main-wrapper--container').appendChild(tableProgram)
+
     programBtn.addEventListener('click',()=>{
         programBtn.classList.add('active-text')
         programBtn.classList.remove('inactive-text')
@@ -614,7 +836,7 @@ if(programBtn&&programIntroductBtn){
         programIntroductBtn.classList.add('inactive-text')
 
         $('.block__main-wrapper--container').removeChild(introduceProgram)
-        // $('.block__main-wrapper--container').appendChild(tableProgram)
+        $('.block__main-wrapper--container').appendChild(tableProgram)
     })
 
     programIntroductBtn.addEventListener('click',()=>{
@@ -624,7 +846,7 @@ if(programBtn&&programIntroductBtn){
         programBtn.classList.add('inactive-text')
         programBtn.querySelector('.block__main-upper-left--first_underline').classList.add('hidden')
     
-        // $('.block__main-wrapper--container').removeChild(tableProgram)
+        $('.block__main-wrapper--container').removeChild(tableProgram)
         $('.block__main-wrapper--container').appendChild(introduceProgram)
     })
 }
