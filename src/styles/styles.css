@@ -31,6 +31,10 @@ button {
   font-family: "Quicksand", sans-serif;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -110,7 +114,7 @@ a.block__sidebar-home--link1:hover {
   background-color: var(--white-text);
 }
 
-button.block__sidebar-home--link2,
+.sidebar-dropdown,
 a.block__sidebar-home--link2 {
   display: flex;
   margin-top: 0.5rem;
@@ -152,6 +156,34 @@ a.block__sidebar-home--link2 span {
     height: 2px;
     width: 70px;
     background-color: var(--sub-text);
+  }
+}
+
+.sidebar-dropdown {
+  flex-direction: column;
+  gap: 0;
+
+  .sidebar-dropdown-upper {
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.sidebar-dropdown-wrapper {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+
+  a {
+    transition-duration: 0.5s;
+    padding: 0.75rem 1rem 0.75rem 0.25rem;
+    width: 100%;
+    color: var(--main-text);
+  }
+
+  a:hover {
+    opacity: 0.8;
   }
 }
 

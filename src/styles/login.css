@@ -159,6 +159,7 @@ body {
   text-decoration: none;
   transition: all;
   transition-duration: 300ms;
+  border: none;
 }
 
 .login__button:hover {

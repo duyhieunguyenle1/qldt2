@@ -182,6 +182,7 @@ th:last-child {
   width: 100%;
   flex-direction: column;
   margin-top: 1.25rem;
+  height: fit-content;
 
   h2 {
     font-weight: 700;
@@ -189,5 +190,27 @@ th:last-child {
     line-height: 2.25rem;
     text-align: center;
     width: 100%;
+  }
+
+  .block__enroll-wrapper-right {
+    gap: 0.25rem;
+    flex-direction: column;
+
+    .block__enroll-week {
+      text-decoration: underline;
+      font-weight: 600;
+      font-size: 14px;
+      color: #4c4c4c;
+      padding: 0.25rem;
+    }
+
+    .block__enroll-days {
+      background-color: var(--main-text);
+      color: var(--white-text);
+      padding: 0.5rem 0.75rem;
+      border-radius: 1rem;
+      font-weight: 700;
+      font-size: 14px;
+    }
   }
 }

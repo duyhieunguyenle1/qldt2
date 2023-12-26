@@ -6,17 +6,32 @@ const dropdownBtn = $$('.block__enroll-button--dropdown')
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
-const showPassword = $('.input__icon--password-show')
-const hidePassword = $('.input__icon--password-hide')
-const inputPassword = $('.input__login--password')
 const queryGradeBtn = $('.block__grade-btn--right')
 const gradeBtn = $('.block__grade-btn--left')
 const programBtn = $('.block__program--left')
 const programIntroductBtn = $('.block__program--right')
+const dropdownSidebar = $('.sidebar-dropdown')
 
 const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
 $('.main__header-noti').appendChild(notiHeaderNumber)
+
+const dropdownSidebarWrapper = document.createElement('div')
+dropdownSidebarWrapper.innerHTML=`<div class="sidebar-dropdown-wrapper flex hidden">
+<a href="" class="transition-all">Khai báo minh chứng</a>
+<a href="" class="transition-all">Sự kiện đã tham gia</a>
+<a href="" class="transition-all">Phiếu điểm rèn luyện</a>
+</div>
+`
+
+dropdownSidebar.appendChild(dropdownSidebarWrapper)
+dropdownSidebar.addEventListener('click',()=>{
+
+    $('.sidebar-dropdown-wrapper').classList.toggle('hidden')
+    dropdownSidebar.classList.toggle('bg-white')
+    $('.sidebar-dropdown .sidebar-dropdown-arrow--first').classList.toggle('hidden')
+    $('.sidebar-dropdown .sidebar-dropdown-arrow--second').classList.toggle('hidden')
+})
 
 if(examDropdownBtn){
     examDropdownBtn.addEventListener('click',()=>{
@@ -33,20 +48,6 @@ if(dropdownBtn[0]&&dropdownBtn[1]){
     dropdownBtn[1].addEventListener('click',()=>{
         dropdownWrapper[1].classList.toggle('hidden')
         dropdownWrapper[0].classList.add('hidden')
-    })
-}
-
-if(showPassword&&hidePassword&&inputPassword){
-    showPassword.addEventListener('click',()=>{
-        hidePassword.classList.remove('hidden')
-        showPassword.classList.add('hidden')
-        inputPassword.type = 'password'
-    })
-    
-    hidePassword.addEventListener('click',()=>{
-        hidePassword.classList.add('hidden')
-        showPassword.classList.remove('hidden')
-        inputPassword.type = 'text'
     })
 }
 

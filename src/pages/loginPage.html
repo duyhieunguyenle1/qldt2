@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="../js/main.js" defer></script>
+    <script type="module" src="../js/login.js" defer></script>
   </head>
   <body>
     <div class="screen">
@@ -20,7 +20,7 @@
         <img class="bg__img" src="../img/bg.png" alt="background" />
         <div class="bg__footer"></div>
       </div>
-      <div class="login">
+      <form class="login">
         <div class="login__title">
           <img class="login__title-logo" src="../img/logo.png" alt="logo" />
           <div class="login__title-heading">Đăng nhập</div>
@@ -30,6 +30,7 @@
             class="input__label"
             type="text"
             placeholder="Tên đăng nhập hoặc email"
+            required
           />
           <span class="input__icon" style="cursor: default;">
             <svg
@@ -71,7 +72,7 @@
           </span>
         </div>
         <div class="input">
-          <input class="input__label input__login--password" type="text" placeholder="Mật khẩu" />
+          <input class="input__label input__login--password" type="password" placeholder="Mật khẩu" required />
           <span class="input__icon hidden input__icon--password-show">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +120,7 @@
           <span> Ghi nhớ đăng nhập </span>
           <span class="login__function-forget">Quên mật khẩu?</span>
         </div>
-        <a href="../index.html" class="login__button">Đăng nhập</a>
+        <button type="submit" href="../index.html" class="login__button">Đăng nhập</button>
         <div class="login-text-between">
           <hr id="line-between" />
           <span>Hoặc đăng nhập với</span>
@@ -128,7 +129,7 @@
         <div class="login__button login__button--ms365">
           PTIT Microsoft Office 365
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
