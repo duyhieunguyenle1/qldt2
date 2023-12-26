@@ -106,11 +106,11 @@
   border-radius: 0.5rem;
   gap: 0.75rem;
   cursor: pointer;
+}
 
-  span {
-    font-weight: 600;
-    color: #4c4c4c;
-  }
+.block__main-upper-right--item span{
+  font-weight: 600;
+  color: #4c4c4c;
 }
 
 .block__main-upper-right--item:hover {
@@ -151,38 +151,33 @@
   padding: 1rem;
   background-color: var(--white-text);
   overflow-x: auto;
+}
 
-  table {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 1rem;
-    border-spacing: 0;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+.block__program-main-container--table table{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  border-spacing: 0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
 
-    tbody {
-      td {
-        text-align: center;
-        font-size: 14px;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-      }
+.block__program-main-container--table table td{
+  text-align: center;
+  font-size: 14px;
+  padding: 1rem 0.5rem;
+}
 
-      .block__program-main-table--action {
-        cursor: pointer;
-        height: fit-content;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
+.block__program-main-container--table table .block__program-main-table--action{
+  cursor: pointer;
+  height: fit-content;
+  align-items: center;
+  justify-content: center; 
+}
 
-  .block__program-main-table--head {
-    background-color: var(--head-table);
+.block__program-main-container--table .block__program-main-table--head{
+  background-color: var(--head-table);
+}
 
-    th {
-      padding: 1rem;
-    }
-  }
+.block__program-main-container--table .block__program-main-table--head th{
+  padding: 1rem;
 }

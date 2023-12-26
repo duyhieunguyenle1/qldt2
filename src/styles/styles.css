@@ -151,46 +151,46 @@ a.block__sidebar-home--link2 span {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--sub-text);
+}
 
-  hr {
-    height: 2px;
-    width: 70px;
-    background-color: var(--sub-text);
-  }
+.block__sidebar-home--title h4 hr{
+  height: 2px;
+  width: 70px;
+  background-color: var(--sub-text);
 }
 
 .sidebar-dropdown {
   flex-direction: column;
   gap: 0;
+}
 
-  .sidebar-dropdown-upper {
-    width: 100%;
-    align-items: center;
-    gap: 1rem;
-  }
+.sidebar-dropdown .sidebar-dropdown-upper{
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
 }
 
 .sidebar-dropdown-wrapper {
   flex-direction: column;
   width: 100%;
   margin-top: 1rem;
+}
 
-  a {
-    transition-duration: 0.5s;
-    padding: 0.75rem 1rem 0.75rem 0.25rem;
-    width: 100%;
-    color: var(--main-text);
-  }
+.sidebar-dropdown-wrapper a{
+  transition-duration: 0.5s;
+  padding: 0.75rem 1rem 0.75rem 0.25rem;
+  width: 100%;
+  color: var(--main-text);
+}
 
-  a:hover {
-    opacity: 0.8;
-  }
+.sidebar-dropdown-wrapper a:hover{
+  opacity: 0.8;
 }
 
 /* content */
 .block__main-container {
-  margin-left: 100px;
-  width: calc(100% - 100px);
+  margin-left: 70px;
+  width: calc(100% - 70px);
   background-color: #fffefc;
 }
 
@@ -202,7 +202,7 @@ a.block__sidebar-home--link2 span {
   padding-right: 2.5rem;
   padding-top: 2rem;
   padding-bottom: 0.75rem;
-  width: calc(100% - 100px);
+  width: calc(100% - 70px);
   background-color: var(--white-text);
 }
 
@@ -229,12 +229,12 @@ a.block__sidebar-home--link2 span {
   padding: 0.5rem;
   max-height: 48px;
   color: #000;
+}
 
-  svg {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.3s;
-  }
+.block_main-header-logo-wrapper svg{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
 }
 
 .block_main-header-logo-wrapper:hover {
@@ -276,11 +276,11 @@ a.block__sidebar-home--link2 span {
   margin-left: 1rem;
   margin-right: 1rem;
   padding-top: 7rem;
+}
 
-  hr {
-    height: 1px;
-    background-color: #f2f2f2;
-  }
+.block__main-wrapper hr{
+  height: 1px;
+  background-color: #f2f2f2;
 }
 
 /* home */
@@ -293,13 +293,6 @@ a.block__sidebar-home--link2 span {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
 }
 .card-list .card {
   padding: 1rem;
@@ -378,10 +371,6 @@ a.block__sidebar-home--link2 span {
   line-height: 2rem;
   font-weight: 700;
   text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: start;
-  }
 }
 
 .noti .noti__item {
@@ -397,20 +386,12 @@ a.block__sidebar-home--link2 span {
   border-bottom-width: 1px;
   border-style: solid;
   border-color: #ccc;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
 }
 
 .noti__item .noti__info {
   display: flex;
   position: relative;
   flex-direction: column;
-
-  @media (min-width: 768px) {
-    width: 75%;
-  }
 }
 
 .noti__info .noti__info-label {
@@ -418,20 +399,12 @@ a.block__sidebar-home--link2 span {
   font-weight: 600;
   text-align: center;
   color: #4c4c4c;
-
-  @media (min-width: 768px) {
-    text-align: start;
-  }
 }
 
 .noti__info .noti__info-date {
   text-align: center;
   font-size: 11px;
   color: #808080;
-
-  @media (min-width: 768px) {
-    text-align: start;
-  }
 }
 
 #tag-new {
@@ -448,6 +421,7 @@ a.block__sidebar-home--link2 span {
   background: #868bee;
   font-size: 11px;
 }
+
 .noti__item .noti__button {
   color: #de2219;
   padding: 0.5rem;
@@ -455,16 +429,6 @@ a.block__sidebar-home--link2 span {
   border-radius: 1rem;
   font-weight: 600;
   text-decoration: underline;
-
-  @media (min-width: 768px) {
-    margin-left: auto;
-  }
-}
-
-.noti-news .news {
-  @media (min-width: 768px) {
-    width: 30%;
-  }
 }
 
 .news .news-list {
@@ -484,10 +448,6 @@ a.block__sidebar-home--link2 span {
 
 .news-item .news-item__info {
   display: flex;
-
-  @media (min-width: 768px) {
-    gap: 0.5rem;
-  }
 }
 
 .news-item .news-item__img {
@@ -495,10 +455,6 @@ a.block__sidebar-home--link2 span {
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  @media (min-width: 768px) {
-    width: fit-content;
-  }
 }
 
 .news-item .news-item__label {

@@ -3,14 +3,27 @@
     max-width: 100px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
 
-    .block__sidebar-logo {
-      justify-content: center;
-    }
+  .fixed__sidebar-container .block__sidebar-logo{
+    justify-content: center;
+  }
 
-    a.block__sidebar-home--link2 {
-      justify-content: center;
-    }
+  .fixed__sidebar-container a.block__sidebar-home--link2{
+    justify-content: center;
+  }
+
+  .sidebar-dropdown-upper{
+    justify-content: center;
+  }
+
+  .sidebar-dropdown-upper span{
+    display: none;
+  }
+
+  .sidebar-dropdown a{
+    font-size: 12px;
+    padding-left: 1.5rem;
   }
 }
 
@@ -25,11 +38,9 @@
     line-height: 1.25rem;
   }
 
-  .block__enroll-wrapper-content--dropdown {
-    ul {
+  .block__enroll-wrapper-content--dropdown ul {
       font-size: 0.875rem;
       line-height: 1.25rem;
-    }
   }
 }
 
@@ -58,10 +69,10 @@
   .block__sidebar-home--title h4 {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
 
-    hr {
-      width: 7rem;
-    }
+  .block__sidebar-home--title h4 hr{
+    width: 7rem;
   }
 
   .block__main-container {
@@ -89,10 +100,10 @@
   .noti-news {
     margin-top: 0;
     flex-direction: row;
-
-    .noti {
-      width: 70%;
-    }
+  }
+  
+  .noti-news .noti{
+    width: 70%;
   }
 
   .block__grade-main-container--footer-item {
@@ -106,6 +117,46 @@
   .block__program-introduce-image {
     width: 435px;
     height: 290px;
+  }
+
+  .card-area .card-list{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .noti-news .heading{
+    text-align: start;
+  }
+
+  .noti .noti__item{
+    flex-direction: row;
+  }
+
+  .noti__item .noti__info{
+    width: 75%;
+  }
+
+  .noti__info .noti__info-label{
+    text-align: start;
+  }
+
+  .noti__item .noti__button{
+    margin-left: auto;
+  }
+
+  .noti__info .noti__info-date{
+    text-align: start;
+  }
+
+  .noti-news .news{
+    width: 30%;
+  }
+
+  .news-item .news-item__info{
+    gap: 0.5rem;
+  }
+
+  .news-item .news-item__img{
+    width: fit-content;
   }
 }
 
@@ -165,6 +216,10 @@
 
   .block__grade-main-container--footer-item {
     width: 65%;
+  }
+
+  .card-area .card-list{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
