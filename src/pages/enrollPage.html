@@ -345,7 +345,7 @@
                                     <tbody>
                                         <tr class="transition-all py-4 green-bg">
                                             <td>
-                                                <input checked type="checkbox" name="" id="">
+                                                <input class="enroll__input-check" checked type="checkbox" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14131
@@ -368,7 +368,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14131
@@ -391,7 +391,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14131
@@ -414,7 +414,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14132
@@ -437,7 +437,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14132
@@ -483,7 +483,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14132
@@ -506,7 +506,7 @@
                                         </tr>
                                         <tr class="transition-all py-4">
                                             <td>
-                                                <input type="checkbox" name="" id="">
+                                                <input type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14135
@@ -529,7 +529,7 @@
                                         </tr>
                                         <tr class="transition-all py-4 green-bg">
                                             <td>
-                                                <input checked type="checkbox" name="" id="">
+                                                <input checked type="checkbox" class="enroll__input-check" name="" id="">
                                             </td>
                                             <td>
                                                 MUL14135
@@ -557,21 +557,568 @@
                     </div>
                     <div class="main_shadow block__enroll-wrapper-content-right flex">
                         <h2>Bảng xem trước</h2>
-                        <div class="flex block__enroll-wrapper-right">
-                            <div class="flex" style="gap: 0.25rem; overflow-x: auto;">
-                                <span class="block__enroll-week">Tuần</span>
-                                <span class="block__enroll-days">T2</span>
-                                <span class="block__enroll-days">T3</span>
-                                <span class="block__enroll-days">T4</span>
-                                <span class="block__enroll-days">T5</span>
-                                <span class="block__enroll-days">T6</span>
-                                <span class="block__enroll-days">T7</span>
-                                <span class="block__enroll-days">CN</span>
-                            </div>
-                            <div class="">
-
-                            </div>
-                        </div>
+                        <table class="flex block__enroll-wrapper-right" style="overflow-x: auto;">
+                            <thead>
+                                <tr class="flex" style="gap: 0.25rem;">
+                                    <th class="block__enroll-week">Tuần</th>
+                                    <th class="block__enroll-days">T2</th>
+                                    <th class="block__enroll-days">T3</th>
+                                    <th class="block__enroll-days">T4</th>
+                                    <th class="block__enroll-days">T5</th>
+                                    <th class="block__enroll-days">T6</th>
+                                    <th class="block__enroll-days">T7</th>
+                                    <th class="block__enroll-days">CN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                        1
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                        2
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                        3
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       4
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       5
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       6
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       7
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       8
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       9
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       10
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       11
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       12
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       13
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       14
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       15
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       16
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       17
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       18
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       19
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       20
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                                <tr class="flex" style="gap: 0.25rem; align-items: center;">
+                                    <td class="inline__enroll-content-week">
+                                       21
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                    <td class="inline__enroll-content-img">
+                                        <img src="../img/home_previous_board2.png" alt="previous">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

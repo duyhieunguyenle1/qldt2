@@ -6,6 +6,7 @@
   --red-background: #de2219;
   --green-background: #dff2dc;
   --head-table: #f9d5d5;
+  --purple-background: #d7d8f9;
 }
 
 .px-2 {
@@ -211,6 +212,27 @@ th:last-child {
       border-radius: 1rem;
       font-weight: 700;
       font-size: 14px;
+      flex: 1;
+    }
+
+    tbody {
+      display: flex;
+      gap: 0.25rem;
+      flex-direction: column;
+
+      .inline__enroll-content-week {
+        padding: 0.5rem 1.125rem;
+        color: var(--main-text);
+        background-color: var(--purple-background);
+        border-radius: 1rem;
+        font-weight: 700;
+        font-size: 14px;
+        min-width: 45px;
+      }
+
+      .inline__enroll-content-img {
+        flex: 1;
+      }
     }
   }
 }

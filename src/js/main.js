@@ -3,6 +3,7 @@ const $$=document.querySelectorAll.bind(document)
 
 const dropdownWrapper = $$('.block__enroll-wrapper-content--dropdown ul')
 const dropdownBtn = $$('.block__enroll-button--dropdown')
+const inputCheckboxs = $$('.enroll__input-check')
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
@@ -32,6 +33,18 @@ dropdownSidebar.addEventListener('click',()=>{
     $('.sidebar-dropdown .sidebar-dropdown-arrow--first').classList.toggle('hidden')
     $('.sidebar-dropdown .sidebar-dropdown-arrow--second').classList.toggle('hidden')
 })
+
+if(inputCheckboxs){
+    inputCheckboxs.forEach(inp=>{
+        inp.addEventListener('change',(e)=>{
+            if(e.target.checked){
+                inp.parentNode.parentNode.classList.add('green-bg')
+            }else{
+                inp.parentNode.parentNode.classList.remove('green-bg')
+            }
+        })
+    })
+}
 
 if(examDropdownBtn){
     examDropdownBtn.addEventListener('click',()=>{
@@ -73,7 +86,48 @@ if(queryGradeBtn&&gradeBtn){
             Thêm mới
         </span>
     </button>
+    <div class="block__grade-main-container--table" style="padding-left: 0; padding-right: 0;">
+        <table>
+            <thead>
+                <tr class="block__grade-main-table--head">
+                    <th>STT</th>
+                    <th>Trạng thái</th>
+                    <th>Kỳ học</th>
+                    <th>Học phần</th>
+                    <th>Nội dung</th>
+                    <th>File đính kèm</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Chưa trả lời</td>
+                    <td class="text-base">Học kỳ 2 năm học 2022 - 2023</td>
+                    <td>Kiến trúc máy tính và hệ điều hành</td>
+                    <td>Thắc mắc điểm cuối kỳ</td>
+                    <td>
+                        <span class="inline__grade-file-table transition-all">
+                            .jpg
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Đã trả lời</td>
+                    <td class="text-base">Học kỳ 1 năm học 2021 - 2022</td>
+                    <td>Tin học cơ sở 1</td>
+                    <td>Thắc mắc điểm cuối kỳ</td>
+                    <td>
+                        <span class="inline__grade-file-table transition-all">
+                            .jpg
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+</div>
     `
 
     tableGrade.innerHTML=`

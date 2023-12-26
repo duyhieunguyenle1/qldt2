@@ -224,4 +224,17 @@
   button:hover {
     opacity: 0.7;
   }
+
+  .inline__grade-file-table {
+    border-radius: 1rem;
+    background-color: #f5f5fe;
+    color: var(--sub-text);
+    padding: 0.5rem 1.25rem;
+    cursor: pointer;
+    transition-duration: 300ms;
+  }
+
+  .inline__grade-file-table:hover {
+    opacity: 0.8;
+  }
 }

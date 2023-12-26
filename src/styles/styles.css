@@ -187,9 +187,10 @@ a.block__sidebar-home--link2 span {
   }
 }
 
+/* content */
 .block__main-container {
-  margin-left: 70px;
-  width: calc(100% - 70px);
+  margin-left: 100px;
+  width: calc(100% - 100px);
   background-color: #fffefc;
 }
 
