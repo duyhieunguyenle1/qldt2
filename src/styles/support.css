@@ -1,0 +1,131 @@
+:root {
+  --head-text: #1e298d;
+  --main-text: #5e64e9;
+  --white-text: #fff;
+  --sub-text: #363de3;
+  --red-background: #de2219;
+  --green-background: #dff2dc;
+  --head-table: #f9d5d5;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.sub-text {
+  color: var(--sub-text);
+}
+
+.block__main-upper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block__main-upper-right {
+  gap: 1rem;
+}
+
+.block__main-upper-right--item {
+  transition-duration: 0.3s;
+  padding: 0.75rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.block__main-upper-right--item span {
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
+.block__main-upper-right--item:hover {
+  opacity: 0.7;
+}
+
+.block__exam-wrapper-content--dropdown {
+  position: relative;
+  margin-top: 0.25rem;
+  /* width: fit-content; */
+}
+
+.inline__support-upper--left {
+  background-color: transparent;
+  color: var(--red-background);
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--red-background);
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition-duration: 300ms;
+}
+
+.inline__support-upper--left:hover {
+  opacity: 0.7;
+}
+
+.block__support-main-container--head {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.block__support-main-container--table {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.block__support-main-container--table table {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+  border-spacing: 0;
+}
+
+.block__support-main-container--table table td {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.block__support-main-container--table table .block__support-main-table--action {
+  cursor: pointer;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.block__support-main-container--table .block__support-main-table--head {
+  background-color: var(--head-table);
+}
+
+.block__support-main-container--table .block__support-main-table--head th {
+  padding: 1rem;
+}
+
+.inline__support-file {
+  font-weight: 500;
+  color: var(--sub-text);
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  transition-duration: 300ms;
+  background-color: #f5f5fe;
+  border-radius: 1rem;
+}
+
+.inline__support-file:hover {
+  opacity: 0.7;
+}

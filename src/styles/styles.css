@@ -103,10 +103,7 @@ a.block__sidebar-home--link1 {
   align-items: center;
   gap: 1rem;
   transition-duration: 300ms;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.45rem 1rem;
   border-radius: 1rem;
 }
 
@@ -122,10 +119,7 @@ a.block__sidebar-home--link2 {
   align-items: center;
   gap: 1rem;
   transition-duration: 300ms;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.45rem 1rem;
   border-radius: 1rem;
 }
 
@@ -138,8 +132,7 @@ a.block__sidebar-home--link2 span {
 }
 
 .block__sidebar-home--title {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.75rem;
   align-items: center;
   justify-content: center;
 }
@@ -153,7 +146,7 @@ a.block__sidebar-home--link2 span {
   color: var(--sub-text);
 }
 
-.block__sidebar-home--title h4 hr{
+.block__sidebar-home--title h4 hr {
   height: 2px;
   width: 70px;
   background-color: var(--sub-text);
@@ -164,7 +157,7 @@ a.block__sidebar-home--link2 span {
   gap: 0;
 }
 
-.sidebar-dropdown .sidebar-dropdown-upper{
+.sidebar-dropdown .sidebar-dropdown-upper {
   width: 100%;
   align-items: center;
   gap: 1rem;
@@ -173,17 +166,17 @@ a.block__sidebar-home--link2 span {
 .sidebar-dropdown-wrapper {
   flex-direction: column;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
 }
 
-.sidebar-dropdown-wrapper a{
+.sidebar-dropdown-wrapper a {
   transition-duration: 0.5s;
-  padding: 0.75rem 1rem 0.75rem 0.25rem;
+  padding: 0.5rem 1rem 0.5rem 0.25rem;
   width: 100%;
   color: var(--main-text);
 }
 
-.sidebar-dropdown-wrapper a:hover{
+.sidebar-dropdown-wrapper a:hover {
   opacity: 0.8;
 }
 
@@ -231,7 +224,7 @@ a.block__sidebar-home--link2 span {
   color: #000;
 }
 
-.block_main-header-logo-wrapper svg{
+.block_main-header-logo-wrapper svg {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.3s;
@@ -278,7 +271,7 @@ a.block__sidebar-home--link2 span {
   padding-top: 7rem;
 }
 
-.block__main-wrapper hr{
+.block__main-wrapper hr {
   height: 1px;
   background-color: #f2f2f2;
 }

@@ -5,25 +5,25 @@
     padding-bottom: 1rem;
   }
 
-  .fixed__sidebar-container .block__sidebar-logo{
+  .fixed__sidebar-container .block__sidebar-logo {
     justify-content: center;
   }
 
-  .fixed__sidebar-container a.block__sidebar-home--link2{
+  .fixed__sidebar-container a.block__sidebar-home--link2 {
     justify-content: center;
   }
 
-  .sidebar-dropdown-upper{
+  .sidebar-dropdown-upper {
     justify-content: center;
   }
 
-  .sidebar-dropdown-upper span{
+  .sidebar-dropdown-upper span {
     display: none;
   }
 
-  .sidebar-dropdown a{
-    font-size: 12px;
-    padding-left: 1.5rem;
+  .sidebar-dropdown a {
+    font-size: 11px;
+    padding: 0.25rem 0 0.5rem 0.75rem;
   }
 }
 
@@ -39,8 +39,8 @@
   }
 
   .block__enroll-wrapper-content--dropdown ul {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -71,7 +71,7 @@
     line-height: 1.75rem;
   }
 
-  .block__sidebar-home--title h4 hr{
+  .block__sidebar-home--title h4 hr {
     width: 7rem;
   }
 
@@ -101,8 +101,8 @@
     margin-top: 0;
     flex-direction: row;
   }
-  
-  .noti-news .noti{
+
+  .noti-news .noti {
     width: 70%;
   }
 
@@ -119,43 +119,43 @@
     height: 290px;
   }
 
-  .card-area .card-list{
+  .card-area .card-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .noti-news .heading{
+  .noti-news .heading {
     text-align: start;
   }
 
-  .noti .noti__item{
+  .noti .noti__item {
     flex-direction: row;
   }
 
-  .noti__item .noti__info{
+  .noti__item .noti__info {
     width: 75%;
   }
 
-  .noti__info .noti__info-label{
+  .noti__info .noti__info-label {
     text-align: start;
   }
 
-  .noti__item .noti__button{
+  .noti__item .noti__button {
     margin-left: auto;
   }
 
-  .noti__info .noti__info-date{
+  .noti__info .noti__info-date {
     text-align: start;
   }
 
-  .noti-news .news{
+  .noti-news .news {
     width: 30%;
   }
 
-  .news-item .news-item__info{
+  .news-item .news-item__info {
     gap: 0.5rem;
   }
 
-  .news-item .news-item__img{
+  .news-item .news-item__img {
     width: fit-content;
   }
 }
@@ -218,7 +218,7 @@
     width: 65%;
   }
 
-  .card-area .card-list{
+  .card-area .card-list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
