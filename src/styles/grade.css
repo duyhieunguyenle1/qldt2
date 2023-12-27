@@ -100,7 +100,7 @@
   cursor: pointer;
 }
 
-.block__main-upper-right--item span{
+.block__main-upper-right--item span {
   font-weight: 600;
   color: #4c4c4c;
 }
@@ -130,6 +130,7 @@
 
 .block__grade-main-table--head {
   background-color: var(--head-table);
+  text-align: center;
 }
 
 .block__grade-main-container--table th {
@@ -179,7 +180,8 @@
   background-color: #f2f2f2;
 }
 
-.block__grade-main-container--footer-wrapper .block__grade-main-container--footer-item{
+.block__grade-main-container--footer-wrapper
+  .block__grade-main-container--footer-item {
   justify-content: space-between;
   align-items: center;
   padding-top: 0.5rem;
@@ -187,7 +189,8 @@
   gap: 0.125rem;
 }
 
-.block__grade-main-container--footer-wrapper .block__grade-main-container--footer-left{
+.block__grade-main-container--footer-wrapper
+  .block__grade-main-container--footer-left {
   padding-left: 1rem;
   padding-right: 1rem;
   flex: 1 1 0%;
@@ -201,11 +204,11 @@
   margin-bottom: 0.5rem;
 }
 
-.block__query-container p{
+.block__query-container p {
   margin-bottom: 0.5rem;
 }
 
-.block__query-container button{
+.block__query-container button {
   transition-duration: 0.3s;
   padding: 0.25rem 0.5rem;
   border: solid 1px var(--red-background);
@@ -215,16 +218,16 @@
   cursor: pointer;
 }
 
-.block__query-container button:hover{
+.block__query-container button:hover {
   opacity: 0.7;
 }
 
-.block__query-container button span{
+.block__query-container button span {
   margin-left: 0.5rem;
   font-size: 1rem;
 }
 
-.block__query-container .inline__grade-file-table{
+.block__query-container .inline__grade-file-table {
   border-radius: 1rem;
   background-color: #f5f5fe;
   color: var(--sub-text);
@@ -233,6 +236,6 @@
   transition-duration: 300ms;
 }
 
-.block__query-container .inline__grade-file-table:hover{
+.block__query-container .inline__grade-file-table:hover {
   opacity: 0.8;
 }

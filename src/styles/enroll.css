@@ -14,6 +14,78 @@
   padding-right: 0.5rem;
 }
 
+.sang-text {
+  color: #e02d2d;
+}
+
+.chieu-text {
+  color: #5ebc4e;
+}
+
+.toi-text {
+  color: #a946f6;
+}
+
+.circle-7 {
+  background-color: #f3abab;
+}
+
+.circle-8 {
+  background-color: #ee7474;
+}
+
+.circle-9 {
+  background-color: #e65757;
+}
+
+.circle-10 {
+  background-color: #db2f2f;
+}
+
+.circle-11 {
+  background-color: #b32424;
+}
+
+.circle-12 {
+  background-color: #921818;
+}
+
+.circle-13 {
+  background-color: #bfe4b8;
+}
+
+.circle-14 {
+  background-color: #9ed795;
+}
+
+.circle-15 {
+  background-color: #7ec971;
+}
+
+.circle-16 {
+  background-color: #5ebc4e;
+}
+
+.circle-17 {
+  background-color: #4b963e;
+}
+
+.circle-18 {
+  background-color: #3d7a33;
+}
+
+.circle-19 {
+  background-color: #dcb5fb;
+}
+
+.circle-20 {
+  background-color: #cb90fa;
+}
+
+.circle-21 {
+  background-color: #b96bf8;
+}
+
 .green-bg {
   background-color: var(--green-background);
 }
@@ -48,6 +120,15 @@ th:last-child {
   border-radius: 0 16px 16px 0;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
 .block__enroll-container {
   flex-direction: column;
 }
@@ -65,7 +146,7 @@ th:last-child {
   /* width: fit-content; */
 }
 
-.block__enroll-wrapper-content--dropdown ul{
+.block__enroll-wrapper-content--dropdown ul {
   position: absolute;
   z-index: 30;
   margin-top: 0.25rem;
@@ -78,18 +159,18 @@ th:last-child {
   max-height: 15rem;
 }
 
-.block__enroll-wrapper-content--dropdown ul li{
+.block__enroll-wrapper-content--dropdown ul li {
   cursor: pointer;
   transition-duration: 300ms;
   width: 100%;
 }
 
-.block__enroll-wrapper-content--dropdown ul li:hover{
+.block__enroll-wrapper-content--dropdown ul li:hover {
   opacity: 0.7;
   background-color: var(--head-table);
 }
 
-.block__enroll-wrapper-content--dropdown ul li span{
+.block__enroll-wrapper-content--dropdown ul li span {
   /* overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; */
@@ -114,26 +195,26 @@ th:last-child {
   overflow-x: auto;
 }
 
-.block__enroll-wrapper-content-table table{
+.block__enroll-wrapper-content-table table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 0.5rem;
   overflow: hidden;
 }
 
-.block__enroll-wrapper-content-table table tr{
+.block__enroll-wrapper-content-table table tr {
   font-size: 0.875rem;
   line-height: 1.25rem;
   transition-duration: 300ms;
   text-align: center;
 }
 
-.block__enroll-wrapper-content-table table td{
+.block__enroll-wrapper-content-table table td {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.block__enroll-wrapper-content-table table input{
+.block__enroll-wrapper-content-table table input {
   width: 1rem;
   height: 1rem;
   margin-top: 0.5rem;
@@ -153,10 +234,9 @@ th:last-child {
   line-height: 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
-
 }
 
-.block__enroll-button--dropdown .block__enroll-button--span1{
+.block__enroll-button--dropdown .block__enroll-button--span1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -164,30 +244,77 @@ th:last-child {
   display: block;
 }
 
-.block__enroll-button--dropdown .block__enroll-button--span2{
+.block__enroll-button--dropdown .block__enroll-button--span2 {
   max-height: 20px;
   margin-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.block__enroll-button--dropdown .block__enroll-button--span2 svg{
+.block__enroll-button--dropdown .block__enroll-button--span2 svg {
   width: 20px;
   height: 20px;
   color: #9ca3af;
 }
 
 /* right */
+.block__enroll-container--right {
+  flex-direction: column;
+  margin-top: 1.25rem;
+  gap: 1.25rem;
+}
+
+.block__enroll-container--right .block__enroll-right--upper {
+  padding: 0.5rem 1rem 1rem;
+  background-color: var(--white-text);
+  border-radius: 1.5rem;
+}
+
+.block__enroll-right--upper h4 {
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.block__enroll-right--upper .block__enroll-right--upper-table {
+  overflow-x: auto;
+}
+
+.block__enroll-right--upper-table table {
+  width: 100%;
+}
+
+.block__enroll-right--upper-table th {
+  align-items: center;
+  display: flex;
+}
+
+.block__enroll-right--upper .block__enroll-right--upper-table td {
+  padding: 0 0.25rem 1.25rem;
+  flex: 1;
+}
+
+.block__enroll-right--upper-table .enroll-right-circle {
+  border-radius: 9999px;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.block__enroll-right--upper-table .enroll-right-time {
+  font-size: 11px;
+  padding-bottom: 0.25rem;
+}
+
 .block__enroll-wrapper-content-right {
   background-color: var(--white-text);
   padding: 1rem;
   gap: 2rem;
   width: 100%;
   flex-direction: column;
-  margin-top: 1.25rem;
   height: fit-content;
+  border-radius: 1.5rem;
 }
 
-.block__enroll-wrapper-content-right h2{
+.block__enroll-wrapper-content-right h2 {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 2.25rem;
@@ -195,12 +322,12 @@ th:last-child {
   width: 100%;
 }
 
-.block__enroll-wrapper-content-right .block__enroll-wrapper-right{
+.block__enroll-wrapper-content-right .block__enroll-wrapper-right {
   gap: 0.25rem;
   flex-direction: column;
 }
 
-.block__enroll-wrapper-content-right .block__enroll-week{
+.block__enroll-wrapper-content-right .block__enroll-week {
   text-decoration: underline;
   font-weight: 600;
   font-size: 14px;
@@ -208,7 +335,7 @@ th:last-child {
   padding: 0.25rem;
 }
 
-.block__enroll-wrapper-content-right .block__enroll-days{
+.block__enroll-wrapper-content-right .block__enroll-days {
   background-color: var(--main-text);
   color: var(--white-text);
   padding: 0.5rem 0.75rem;
@@ -218,13 +345,13 @@ th:last-child {
   flex: 1;
 }
 
-.block__enroll-wrapper-content-right tbody{
+.block__enroll-wrapper-content-right tbody {
   display: flex;
   gap: 0.25rem;
   flex-direction: column;
 }
 
-.block__enroll-wrapper-content-right tbody .inline__enroll-content-week{
+.block__enroll-wrapper-content-right tbody .inline__enroll-content-week {
   padding: 0.5rem 1.125rem;
   color: var(--main-text);
   background-color: var(--purple-background);
@@ -234,6 +361,6 @@ th:last-child {
   min-width: 45px;
 }
 
-.block__enroll-wrapper-content-right tbody .inline__enroll-content-img{
+.block__enroll-wrapper-content-right tbody .inline__enroll-content-img {
   flex: 1;
 }

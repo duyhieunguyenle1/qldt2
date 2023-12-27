@@ -6,6 +6,7 @@
     <meta name="description" content="Hệ Thống Đào Tạo Trực Tuyến">
     <title>Cổng thông tin quản lý đào tạo</title>
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/tuition.css">
     <link rel="stylesheet" href="../styles/responsive.css">
@@ -46,7 +47,7 @@
                     <h1 class="block__sidebar-logo--title">Ptit S-Link</h1>
                 </div>
             </a>
-            <a href="../index.html" class="block__sidebar-home--link1 transition-all">
+            <a href="../index.html" class="block__sidebar-home--link1 transition-all" data-toggle="tooltip" title="Trang chủ" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +64,7 @@
                     <hr />
                 </h4>
             </div>
-            <a href="./enrollPage.html" class="block__sidebar-home--link2 transition-all">
+            <a href="./enrollPage.html" class="block__sidebar-home--link2 transition-all bg-white" data-toggle="tooltip" title="Đăng ký môn học" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,7 +77,7 @@
                     Đăng ký môn học
                 </span>
             </a>
-            <a href="" class="block__sidebar-home--link2 transition-all">
+            <a href="" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Thời khóa biểu" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 2.00049V5.00049" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8 2.00049V5.00049" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +104,7 @@
                     Thời khóa biểu
                 </span>
             </a>
-            <a href="./examPage.html" class="block__sidebar-home--link2 transition-all">
+            <a href="./examPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Xem lịch thi" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 7.00025V16.9998C21 19.9996 19.5 21.9995 16 21.9995H8C4.5 21.9995 3 19.9996 3 16.9998V7.00025C3 4.00039 4.5 2.00049 8 2.00049H16C19.5 2.00049 21 4.00039 21 7.00025Z" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21 7.00025V16.9998C21 19.9996 19.5 21.9995 16 21.9995H8C4.5 21.9995 3 19.9996 3 16.9998V7.00025C3 4.00039 4.5 2.00049 8 2.00049H16C19.5 2.00049 21 4.00039 21 7.00025Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -118,7 +119,7 @@
                     Xem lịch thi
                 </span>
             </a>
-            <a href="./gradePage.html" class="block__sidebar-home--link2 transition-all">
+            <a href="./gradePage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Xem điểm" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.3701 8.87988H17.6201" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12.3701 8.87988H17.6201" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -135,7 +136,7 @@
                     Xem điểm
                 </span>                
             </a>
-            <a href="./programPage.html" class="block__sidebar-home--link2 transition-all">
+            <a href="./programPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Chương trình đào tạo" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.6599 10.4401L20.6799 14.6199C19.8399 18.2297 18.1799 19.6897 15.0599 19.3897C14.5599 19.3497 14.0199 19.2597 13.4399 19.1197L11.7599 18.7197C7.58994 17.7298 6.29994 15.6699 7.27994 11.4901L8.25994 7.30026C8.45994 6.4503 8.69994 5.71034 8.99994 5.10037C10.1699 2.68049 12.1599 2.03052 15.4999 2.82048L17.1699 3.21046C21.3599 4.19041 22.6399 6.26031 21.6599 10.4401Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21.6599 10.4401L20.6799 14.6199C19.8399 18.2297 18.1799 19.6897 15.0599 19.3897C14.5599 19.3497 14.0199 19.2597 13.4399 19.1197L11.7599 18.7197C7.58994 17.7298 6.29994 15.6699 7.27994 11.4901L8.25994 7.30026C8.45994 6.4503 8.69994 5.71034 8.99994 5.10037C10.1699 2.68049 12.1599 2.03052 15.4999 2.82048L17.1699 3.21046C21.3599 4.19041 22.6399 6.26031 21.6599 10.4401Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +157,7 @@
                     <hr />
                 </h4>
             </div>
-            <a href="" class="block__sidebar-home--link2 transition-all">
+            <a href="" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Tin tức" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -191,12 +192,12 @@
                             <svg width="16" height="16" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="sidebar-dropdown-arrow--second hidden">
                                 <path d="M19.9999 9.4502L13.4799 15.9699C12.7099 16.7398 11.4499 16.7398 10.6799 15.9699L4.15991 9.4502" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M19.9999 9.4502L13.4799 15.9699C12.7099 16.7398 11.4499 16.7398 10.6799 15.9699L4.15991 9.4502" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                
+                            </svg>                   
                         </span>
                     </span>
                 </div>
             </div>
-            <a href="./supportPage.html" class="block__sidebar-home--link2 transition-all">
+            <a href="./supportPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Dịch vụ một cửa" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.25 7.00049H16.75V5.00049C16.75 3.00049 16 2.00049 13.75 2.00049H10.25C8 2.00049 7.25 3.00049 7.25 5.00049V7.00049Z" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.25 7.00049H16.75V5.00049C16.75 3.00049 16 2.00049 13.75 2.00049H10.25C8 2.00049 7.25 3.00049 7.25 5.00049V7.00049Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -213,7 +214,7 @@
                     Dịch vụ một cửa
                 </span>
             </a>
-            <a href="./tuitionPage.html" class="block__sidebar-home--link2 transition-all bg-white">
+            <a href="./tuitionPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Công nợ" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 11.4C8 12.17 8.6 12.7999 9.33 12.7999H10.83C11.47 12.7999 11.99 12.2499 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.58008C8.32 9.41009 8 9.1501 8 8.42014C8 7.75017 8.52 7.2002 9.16 7.2002H10.66C11.4 7.21019 12 7.83017 12 8.60013" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8 11.4C8 12.17 8.6 12.7999 9.33 12.7999H10.83C11.47 12.7999 11.99 12.2499 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.58008C8.32 9.41009 8 9.1501 8 8.42014C8 7.75017 8.52 7.2002 9.16 7.2002H10.66C11.4 7.21019 12 7.83017 12 8.60013" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

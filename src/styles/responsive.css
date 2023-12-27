@@ -192,7 +192,7 @@
     width: calc(100% * 3 / 4);
   }
 
-  .block__enroll-wrapper-content-right {
+  .block__enroll-container--right {
     width: calc(100% * 1 / 4);
   }
 

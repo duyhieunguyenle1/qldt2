@@ -108,7 +108,7 @@
   cursor: pointer;
 }
 
-.block__main-upper-right--item span{
+.block__main-upper-right--item span {
   font-weight: 600;
   color: #4c4c4c;
 }
@@ -145,6 +145,7 @@
   padding: 1.5rem 1.5rem 0.5rem 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .block__program-main-container--table {
@@ -153,7 +154,7 @@
   overflow-x: auto;
 }
 
-.block__program-main-container--table table{
+.block__program-main-container--table table {
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -161,23 +162,24 @@
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-.block__program-main-container--table table td{
+.block__program-main-container--table table td {
   text-align: center;
   font-size: 14px;
   padding: 1rem 0.5rem;
 }
 
-.block__program-main-container--table table .block__program-main-table--action{
+.block__program-main-container--table table .block__program-main-table--action {
   cursor: pointer;
   height: fit-content;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.block__program-main-container--table .block__program-main-table--head{
+.block__program-main-container--table .block__program-main-table--head {
   background-color: var(--head-table);
+  text-align: center;
 }
 
-.block__program-main-container--table .block__program-main-table--head th{
+.block__program-main-container--table .block__program-main-table--head th {
   padding: 1rem;
 }

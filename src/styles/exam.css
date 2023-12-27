@@ -37,7 +37,7 @@
   cursor: pointer;
 }
 
-.block__main-upper-right--item span{
+.block__main-upper-right--item span {
   font-weight: 600;
   color: #4c4c4c;
 }
@@ -52,7 +52,7 @@
   /* width: fit-content; */
 }
 
-.block__exam-wrapper-content--dropdown ul{
+.block__exam-wrapper-content--dropdown ul {
   position: absolute;
   z-index: 30;
   margin-top: 0.25rem;
@@ -66,18 +66,18 @@
   font-size: 14px;
 }
 
-.block__exam-wrapper-content--dropdown ul li{
+.block__exam-wrapper-content--dropdown ul li {
   cursor: pointer;
   transition-duration: 300ms;
   width: 100%;
 }
 
-.block__exam-wrapper-content--dropdown ul li:hover{
+.block__exam-wrapper-content--dropdown ul li:hover {
   opacity: 0.7;
   background-color: var(--head-table);
 }
 
-.block__exam-wrapper-content--dropdown li span{
+.block__exam-wrapper-content--dropdown li span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -103,7 +103,7 @@
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-.block__exam-button--dropdown .block__exam-button--span1{
+.block__exam-button--dropdown .block__exam-button--span1 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -111,16 +111,16 @@
   display: block;
 }
 
-.block__exam-button--dropdown .block__exam-button--span2{
+.block__exam-button--dropdown .block__exam-button--span2 {
   max-height: 20px;
   margin-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.block__exam-button--dropdown .block__exam-button--span2 svg{
+.block__exam-button--dropdown .block__exam-button--span2 svg {
   width: 20px;
   height: 20px;
-  color: #9ca3af; 
+  color: #9ca3af;
 }
 
 .block__exam-main-container--head {
@@ -135,7 +135,7 @@
   overflow-x: auto;
 }
 
-.block__exam-main-container--table table{
+.block__exam-main-container--table table {
   width: 100%;
   overflow: hidden;
   border-radius: 1rem;
@@ -143,7 +143,7 @@
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
 
-.block__exam-main-container--table table td{
+.block__exam-main-container--table table td {
   text-align: center;
   font-size: 14px;
   padding-top: 1rem;
@@ -152,17 +152,18 @@
   padding-right: 0.5rem;
 }
 
-.block__exam-main-container--table table .block__exam-main-table--action{
+.block__exam-main-container--table table .block__exam-main-table--action {
   cursor: pointer;
   height: fit-content;
   align-items: center;
   justify-content: center;
 }
 
-.block__exam-main-container--table .block__exam-main-table--head{
+.block__exam-main-container--table .block__exam-main-table--head {
   background-color: var(--head-table);
+  text-align: center;
 }
 
-.block__exam-main-container--table .block__exam-main-table--head th{
+.block__exam-main-container--table .block__exam-main-table--head th {
   padding: 1rem;
 }
