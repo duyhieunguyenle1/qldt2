@@ -347,7 +347,7 @@ th:last-child {
 
 .block__enroll-wrapper-content-right tbody {
   display: flex;
-  gap: 0.25rem;
+  gap: 0.125rem;
   flex-direction: column;
 }
 
@@ -363,4 +363,9 @@ th:last-child {
 
 .block__enroll-wrapper-content-right tbody .inline__enroll-content-img {
   flex: 1;
+}
+
+.inline__enroll-content-img img {
+  width: 100%;
+  height: 100%;
 }

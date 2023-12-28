@@ -189,11 +189,11 @@
   }
 
   .block__enroll-wrapper-content {
-    width: calc(100% * 3 / 4);
+    width: calc(100% * 7 / 10);
   }
 
   .block__enroll-container--right {
-    width: calc(100% * 1 / 4);
+    width: calc(100% * 3 / 10);
   }
 
   .block__main-upper-left {

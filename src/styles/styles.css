@@ -29,6 +29,7 @@ p {
 
 h4 {
   font-size: 1rem !important;
+  margin-bottom: 0;
 }
 
 td:first-child,
@@ -125,6 +126,7 @@ a.block__sidebar-home--link1 {
 a.block__sidebar-home--link1:hover {
   background-color: var(--white-text);
   text-decoration: none;
+  opacity: 0.8;
 }
 
 .sidebar-dropdown,
@@ -142,6 +144,7 @@ a.block__sidebar-home--link2 {
 .block__sidebar-home--link2:hover {
   background-color: var(--white-text);
   text-decoration: none;
+  opacity: 0.8;
 }
 
 a.block__sidebar-home--link2 span {

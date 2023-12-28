@@ -182,11 +182,12 @@
 
 .block__grade-main-container--footer-wrapper
   .block__grade-main-container--footer-item {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   gap: 0.125rem;
+  width: 100%;
 }
 
 .block__grade-main-container--footer-wrapper
