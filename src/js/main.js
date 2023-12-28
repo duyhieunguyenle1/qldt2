@@ -1,10 +1,9 @@
-const $=document.querySelector.bind(document)
-const $$=document.querySelectorAll.bind(document)
-
-
-if(!localStorage.getItem('accessToken')){
+if(!sessionStorage.getItem('accessToken')){
     window.location.replace('./pages/loginPage.html')
 }
+
+const $=document.querySelector.bind(document)
+const $$=document.querySelectorAll.bind(document)
 
 const dropdownWrapper = $$('.block__enroll-wrapper-content--dropdown ul')
 const dropdownBtn = $$('.block__enroll-button--dropdown')
