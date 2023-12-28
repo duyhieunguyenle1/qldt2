@@ -1,0 +1,40 @@
+:root {
+  --head-text: #1e298d;
+  --main-text: #5e64e9;
+  --white-text: #fff;
+  --sub-text: #363de3;
+  --red-background: #de2219;
+  --red-text: #e02d2d;
+}
+
+.content__heading {
+  color: var(--sub-text);
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin: 1rem 0;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.red-text {
+  color: var(--red-text);
+}
+
+.block__transcript-table-wrapper {
+  background-color: var(--white-text);
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow-x: auto;
+}
+
+.block__transcript-table-wrapper table {
+  width: 100%;
+}
+
+.block__transcript-table-wrapper td,
+.block__transcript-table-wrapper th {
+  padding: 1rem 0.5rem;
+  text-align: center;
+}

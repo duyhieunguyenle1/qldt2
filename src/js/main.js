@@ -1,9 +1,18 @@
 const $=document.querySelector.bind(document)
 const $$=document.querySelectorAll.bind(document)
 
+
+if(!localStorage.getItem('accessToken')){
+    window.location.replace('./pages/loginPage.html')
+}
+
 const dropdownWrapper = $$('.block__enroll-wrapper-content--dropdown ul')
 const dropdownBtn = $$('.block__enroll-button--dropdown')
 const inputCheckboxs = $$('.enroll__input-check')
+const btnListEvent = $$(".subnav__item_event");
+const decsListEvent = $$(".decs_event");
+const btnListProof = $$(".subnav__item_proof");
+const decsListProof = $$(".decs_proof");
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
@@ -17,11 +26,22 @@ const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
 $('.main__header-noti').appendChild(notiHeaderNumber)
 
+let eventPage,proofPage,transcriptPage;
+if(window.location.pathname==='/src/index.html'){
+    eventPage='./pages/eventPage.html'
+    proofPage='./pages/proofPage.html'
+    transcriptPage='./pages/transcriptPage.html'
+}else{
+    eventPage='./eventPage.html'
+    proofPage='./proofPage.html'
+    transcriptPage='./transcriptPage.html'
+}
+
 const dropdownSidebarWrapper = document.createElement('div')
 dropdownSidebarWrapper.innerHTML=`<div class="sidebar-dropdown-wrapper flex hidden">
-<a href="" class="transition-all">Khai báo minh chứng</a>
-<a href="" class="transition-all">Sự kiện đã tham gia</a>
-<a href="" class="transition-all">Phiếu điểm rèn luyện</a>
+<a href="${proofPage}" class="transition-all">Khai báo minh chứng</a>
+<a href="${eventPage}" class="transition-all">Sự kiện đã tham gia</a>
+<a href="${transcriptPage}" class="transition-all">Phiếu điểm rèn luyện</a>
 </div>
 `
 
@@ -904,4 +924,38 @@ if(programBtn&&programIntroductBtn){
         $('.block__main-wrapper--container').removeChild(tableProgram)
         $('.block__main-wrapper--container').appendChild(introduceProgram)
     })
+}
+
+if(btnListEvent&&decsListEvent){
+    for (let i = 0; i < btnListEvent.length; i++) {
+        btnListEvent[i].onclick = function () {
+          btnListEvent[0].classList.remove("subnav__item--selected");
+          btnListEvent[1].classList.remove("subnav__item--selected");
+          btnListEvent[2].classList.remove("subnav__item--selected");
+          btnListEvent[3].classList.remove("subnav__item--selected");
+          btnListEvent[i].classList.add("subnav__item--selected");
+          decsListEvent[0].classList.remove("decs--selected");
+          decsListEvent[1].classList.remove("decs--selected");
+          decsListEvent[2].classList.remove("decs--selected");
+          decsListEvent[3].classList.remove("decs--selected");
+          decsListEvent[i].classList.add("decs--selected");
+        };
+      }
+}
+
+if(btnListProof&&decsListProof){
+    for (let i = 0; i < btnListProof.length; i++) {
+        btnListProof[i].onclick = function () {
+        btnListProof[0].classList.remove("subnav__item--selected");
+        btnListProof[1].classList.remove("subnav__item--selected");
+        btnListProof[2].classList.remove("subnav__item--selected");
+        btnListProof[3].classList.remove("subnav__item--selected");
+        btnListProof[i].classList.add("subnav__item--selected");
+        decsListProof[0].classList.remove("decs--selected");
+        decsListProof[1].classList.remove("decs--selected");
+        decsListProof[2].classList.remove("decs--selected");
+        decsListProof[3].classList.remove("decs--selected");
+        decsListProof[i].classList.add("decs--selected");
+    };
+    }
 }

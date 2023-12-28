@@ -5,6 +5,18 @@ const showPassword = $('.input__icon--password-show')
 const hidePassword = $('.input__icon--password-hide')
 const inputPassword = $('.input__login--password')
 
+function randomId(length) {
+    let result = '';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const charactersLength = characters.length;
+    let counter = 0;
+    while (counter < length) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      counter += 1;
+    }
+    return result;
+}
+
 if(showPassword&&hidePassword&&inputPassword){
     showPassword.addEventListener('click',()=>{
         hidePassword.classList.remove('hidden')
@@ -21,6 +33,9 @@ if(showPassword&&hidePassword&&inputPassword){
 
 $('.login').onsubmit = (e)=>{
     e.preventDefault();
+    
+    const accessToken = randomId(36);
+    localStorage.setItem('accessToken',accessToken)
 
     window.location.replace('../index.html')
 }

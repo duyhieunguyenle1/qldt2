@@ -42,6 +42,23 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .content .content__info {
+    flex-direction: row;
+  }
+
+  .content .decs {
+    width: 65%;
+  }
+
+  .content__heading,
+  .content .content__heading {
+    font-size: 1.5rem;
+  }
+
+  .content__info .subnav {
+    width: 35%;
+  }
 }
 
 @media (min-width: 768px) {
