@@ -15,15 +15,27 @@ const decsListProof = $$(".decs_proof");
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
+const scheduleDropdownWrapper = $('.block__schedule-wrapper-content--dropdown ul')
+const scheduleDropdownBtn = $('.block__schedule-button--dropdown')
 const queryGradeBtn = $('.block__grade-btn--right')
 const gradeBtn = $('.block__grade-btn--left')
 const programBtn = $('.block__program--left')
 const programIntroductBtn = $('.block__program--right')
 const dropdownSidebar = $('.sidebar-dropdown')
+const dropdownUser = $('.main__header-user')
 
 const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
 $('.main__header-noti').appendChild(notiHeaderNumber)
+
+dropdownUser.addEventListener('click',()=>{
+    $('.block__user-dropdown-wrapper').classList.toggle('hidden')
+})
+
+$('.block__user-dropdown-logout').addEventListener('click',()=>{
+    sessionStorage.removeItem('accessToken')
+    window.location.replace('./pages/loginPage.html')
+})
 
 let eventPage,proofPage,transcriptPage;
 if(window.location.pathname==='/src/index.html'){
@@ -62,6 +74,12 @@ if(inputCheckboxs){
                 inp.parentNode.parentNode.classList.remove('green-bg')
             }
         })
+    })
+}
+
+if(scheduleDropdownBtn){
+    scheduleDropdownBtn.addEventListener('click',()=>{
+        scheduleDropdownWrapper.classList.toggle('hidden')
     })
 }
 

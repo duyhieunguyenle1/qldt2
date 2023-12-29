@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hệ Thống Đào Tạo Trực Tuyến">
     <title>Cổng thông tin quản lý đào tạo</title>
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/grade.css">
+    <link rel="stylesheet" href="../styles/schedule.css">
     <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <script type="module" src="../js/main.js" defer></script>
   </head>
   <body>
@@ -46,7 +46,7 @@
                     <h1 class="block__sidebar-logo--title">Ptit S-Link</h1>
                 </div>
             </a>
-            <a href="../index.html" class="block__sidebar-home--link1 transition-all" data-toggle="tooltip" title="Trang chủ" data-placement="right">
+            <a href="../index.html" class="block__sidebar-home--link1 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +63,7 @@
                     <hr />
                 </h4>
             </div>
-            <a href="./enrollPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Đăng ký môn học" data-placement="right">
+            <a href="./enrollPage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M11 2.00049H9C4 2.00049 2 4.00039 2 9.00015V14.9999C2 19.9996 4 21.9995 9 21.9995H15C20 21.9995 22 19.9996 22 14.9999V13" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,7 +76,7 @@
                     Đăng ký môn học
                 </span>
             </a>
-            <a href="./schedulePage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Thời khóa biểu" data-placement="right">
+            <a href="./schedulePage.html" class="block__sidebar-home--link2 transition-all bg-white">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 2.00049V5.00049" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8 2.00049V5.00049" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +103,7 @@
                     Thời khóa biểu
                 </span>
             </a>
-            <a href="./examPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Xem lịch thi" data-placement="right">
+            <a href="./examPage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21 7.00025V16.9998C21 19.9996 19.5 21.9995 16 21.9995H8C4.5 21.9995 3 19.9996 3 16.9998V7.00025C3 4.00039 4.5 2.00049 8 2.00049H16C19.5 2.00049 21 4.00039 21 7.00025Z" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21 7.00025V16.9998C21 19.9996 19.5 21.9995 16 21.9995H8C4.5 21.9995 3 19.9996 3 16.9998V7.00025C3 4.00039 4.5 2.00049 8 2.00049H16C19.5 2.00049 21 4.00039 21 7.00025Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -115,10 +115,10 @@
                     <path d="M8 16.9995H16" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                    
                 <span>
-                    Xem lịch thi
+                    Lịch thi
                 </span>
             </a>
-            <a href="./gradePage.html" class="block__sidebar-home--link2 transition-all bg-white" data-toggle="tooltip" title="Xem điểm" data-placement="right">
+            <a href="./gradePage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.3701 8.87988H17.6201" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M12.3701 8.87988H17.6201" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -135,7 +135,7 @@
                     Xem điểm
                 </span>                
             </a>
-            <a href="./programPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Chương trình đào tạo" data-placement="right">
+            <a href="./programPage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.6599 10.4401L20.6799 14.6199C19.8399 18.2297 18.1799 19.6897 15.0599 19.3897C14.5599 19.3497 14.0199 19.2597 13.4399 19.1197L11.7599 18.7197C7.58994 17.7298 6.29994 15.6699 7.27994 11.4901L8.25994 7.30026C8.45994 6.4503 8.69994 5.71034 8.99994 5.10037C10.1699 2.68049 12.1599 2.03052 15.4999 2.82048L17.1699 3.21046C21.3599 4.19041 22.6399 6.26031 21.6599 10.4401Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21.6599 10.4401L20.6799 14.6199C19.8399 18.2297 18.1799 19.6897 15.0599 19.3897C14.5599 19.3497 14.0199 19.2597 13.4399 19.1197L11.7599 18.7197C7.58994 17.7298 6.29994 15.6699 7.27994 11.4901L8.25994 7.30026C8.45994 6.4503 8.69994 5.71034 8.99994 5.10037C10.1699 2.68049 12.1599 2.03052 15.4999 2.82048L17.1699 3.21046C21.3599 4.19041 22.6399 6.26031 21.6599 10.4401Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -156,7 +156,7 @@
                     <hr />
                 </h4>
             </div>
-            <a href="" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Tin tức" data-placement="right">
+            <a href="" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -183,11 +183,11 @@
                     </svg>
                     <span class="flex items-center">
                         Điểm rèn luyện
-                        <span style="margin-left: 1rem; transform: translateY(3px);">
+                        <span style="margin-left: 1rem;">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="sidebar-dropdown-arrow--first">
                                 <path d="M8.91016 19.9198L15.4302 13.4001C16.2002 12.6302 16.2002 11.3702 15.4302 10.6002L8.91016 4.08057" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M8.91016 19.9198L15.4302 13.4001C16.2002 12.6302 16.2002 11.3702 15.4302 10.6002L8.91016 4.08057" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            </svg>  
                             <svg width="16" height="16" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="sidebar-dropdown-arrow--second hidden">
                                 <path d="M19.9999 9.4502L13.4799 15.9699C12.7099 16.7398 11.4499 16.7398 10.6799 15.9699L4.15991 9.4502" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M19.9999 9.4502L13.4799 15.9699C12.7099 16.7398 11.4499 16.7398 10.6799 15.9699L4.15991 9.4502" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -196,7 +196,7 @@
                     </span>
                 </div>
             </div>
-            <a href="./supportPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Dịch vụ một cửa" data-placement="right">
+            <a href="./supportPage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.25 7.00049H16.75V5.00049C16.75 3.00049 16 2.00049 13.75 2.00049H10.25C8 2.00049 7.25 3.00049 7.25 5.00049V7.00049Z" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M7.25 7.00049H16.75V5.00049C16.75 3.00049 16 2.00049 13.75 2.00049H10.25C8 2.00049 7.25 3.00049 7.25 5.00049V7.00049Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -213,7 +213,7 @@
                     Dịch vụ một cửa
                 </span>
             </a>
-            <a href="./tuitionPage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Công nợ" data-placement="right">
+            <a href="./tuitionPage.html" class="block__sidebar-home--link2 transition-all">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 11.4C8 12.17 8.6 12.7999 9.33 12.7999H10.83C11.47 12.7999 11.99 12.2499 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.58008C8.32 9.41009 8 9.1501 8 8.42014C8 7.75017 8.52 7.2002 9.16 7.2002H10.66C11.4 7.21019 12 7.83017 12 8.60013" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M8 11.4C8 12.17 8.6 12.7999 9.33 12.7999H10.83C11.47 12.7999 11.99 12.2499 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.58008C8.32 9.41009 8 9.1501 8 8.42014C8 7.75017 8.52 7.2002 9.16 7.2002H10.66C11.4 7.21019 12 7.83017 12 8.60013" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -233,14 +233,14 @@
         </div>
         <div class="block__main-container">
             <div class="block__main-header flex items-center">
-                <h1 class="block__main-header--title">Xem điểm</h1>
+                <h1 class="block__main-header--title">Thời khóa biểu</h1>
                 <div class="block__main-header-logo flex main_shadow">
                     <span class="block_main-header-logo-wrapper transition-all">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.5308 20.4696L16.8368 15.7765C18.1973 14.1431 18.8757 12.048 18.7309 9.92715C18.5861 7.80629 17.6293 5.82289 16.0593 4.38956C14.4894 2.95623 12.4274 2.18333 10.3021 2.23163C8.17687 2.27993 6.15205 3.14571 4.64888 4.64888C3.14571 6.15205 2.27993 8.17687 2.23163 10.3021C2.18333 12.4274 2.95623 14.4894 4.38956 16.0593C5.82289 17.6293 7.80629 18.5861 9.92715 18.7309C12.048 18.8757 14.1431 18.1973 15.7765 16.8368L20.4696 21.5308C20.5393 21.6005 20.622 21.6558 20.713 21.6935C20.8041 21.7312 20.9017 21.7506 21.0002 21.7506C21.0988 21.7506 21.1963 21.7312 21.2874 21.6935C21.3784 21.6558 21.4612 21.6005 21.5308 21.5308C21.6005 21.4612 21.6558 21.3784 21.6935 21.2874C21.7312 21.1963 21.7506 21.0988 21.7506 21.0002C21.7506 20.9017 21.7312 20.8041 21.6935 20.713C21.6558 20.622 21.6005 20.5393 21.5308 20.4696ZM3.75021 10.5002C3.75021 9.16519 4.14609 7.86015 4.88779 6.75011C5.62949 5.64008 6.6837 4.77492 7.9171 4.26403C9.1505 3.75314 10.5077 3.61946 11.8171 3.87991C13.1264 4.14036 14.3292 4.78324 15.2732 5.72724C16.2172 6.67125 16.8601 7.87398 17.1205 9.18335C17.381 10.4927 17.2473 11.8499 16.7364 13.0833C16.2255 14.3167 15.3603 15.3709 14.2503 16.1126C13.1403 16.8543 11.8352 17.2502 10.5002 17.2502C8.71061 17.2482 6.99488 16.5364 5.72944 15.271C4.464 14.0056 3.7522 12.2898 3.75021 10.5002Z" fill="currentColor"/>
                         </svg>                            
                     </span>
-                    <span class="block_main-header-logo-wrapper transition-all main__header-noti">
+                    <span class="block_main-header-logo-wrapper main__header-noti transition-all">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.0201 2.91016C8.71009 2.91016 6.02009 5.60016 6.02009 8.91016V11.8002C6.02009 12.4102 5.76009 13.3402 5.45009 13.8602L4.30009 15.7702C3.59009 16.9502 4.08009 18.2602 5.38009 18.7002C9.69009 20.1402 14.3401 20.1402 18.6501 18.7002C19.8601 18.3002 20.3901 16.8702 19.7301 15.7702L18.5801 13.8602C18.2801 13.3402 18.0201 12.4102 18.0201 11.8002V8.91016C18.0201 5.61016 15.3201 2.91016 12.0201 2.91016Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
                             <path d="M13.8699 3.19994C13.5599 3.10994 13.2399 3.03994 12.9099 2.99994C11.9499 2.87994 11.0299 2.94994 10.1699 3.19994C10.4599 2.45994 11.1799 1.93994 12.0199 1.93994C12.8599 1.93994 13.5799 2.45994 13.8699 3.19994Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -248,73 +248,345 @@
                         </svg>
                     </span>
                     <div class="relative flex" style="align-items: center;">
-                        <span class="block_main-header-logo-wrapper main__header-user transition-all">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7.16021 14.56C4.74021 16.18 4.74021 18.82 7.16021 20.43C9.91021 22.27 14.4202 22.27 17.1702 20.43C19.5902 18.81 19.5902 16.17 17.1702 14.56C14.4302 12.73 9.92021 12.73 7.16021 14.56Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                        <div class="block__user-dropdown-wrapper flex hidden">
-                          <div class="block__user-dropdown-home transition-all flex">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M12.1605 10.87C12.0605 10.86 11.9405 10.86 11.8305 10.87C9.45055 10.79 7.56055 8.84 7.56055 6.44C7.56055 3.99 9.54055 2 12.0005 2C14.4505 2 16.4405 3.99 16.4405 6.44C16.4305 8.84 14.5405 10.79 12.1605 10.87Z" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M12.1605 10.87C12.0605 10.86 11.9405 10.86 11.8305 10.87C9.45055 10.79 7.56055 8.84 7.56055 6.44C7.56055 3.99 9.54055 2 12.0005 2C14.4505 2 16.4405 3.99 16.4405 6.44C16.4305 8.84 14.5405 10.79 12.1605 10.87Z" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M7.1607 14.56C4.7407 16.18 4.7407 18.82 7.1607 20.43C9.9107 22.27 14.4207 22.27 17.1707 20.43C19.5907 18.81 19.5907 16.17 17.1707 14.56C14.4307 12.73 9.9207 12.73 7.1607 14.56Z" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M7.1607 14.56C4.7407 16.18 4.7407 18.82 7.1607 20.43C9.9107 22.27 14.4207 22.27 17.1707 20.43C19.5907 18.81 19.5907 16.17 17.1707 14.56C14.4307 12.73 9.9207 12.73 7.1607 14.56Z" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Trang cá nhân</span>
-                          </div>
-                          <div class="block__user-dropdown-logout transition-all flex">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M8.90039 7.56023C9.21039 3.96023 11.0604 2.49023 15.1104 2.49023H15.2404C19.7104 2.49023 21.5004 4.28023 21.5004 8.75023V15.2702C21.5004 19.7402 19.7104 21.5302 15.2404 21.5302H15.1104C11.0904 21.5302 9.24039 20.0802 8.91039 16.5402" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M8.90039 7.56023C9.21039 3.96023 11.0604 2.49023 15.1104 2.49023H15.2404C19.7104 2.49023 21.5004 4.28023 21.5004 8.75023V15.2702C21.5004 19.7402 19.7104 21.5302 15.2404 21.5302H15.1104C11.0904 21.5302 9.24039 20.0802 8.91039 16.5402" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M14.9991 12H3.61914" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M14.9991 12H3.61914" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span>Đăng xuất</span>
-                          </div>
+                      <span class="block_main-header-logo-wrapper main__header-user transition-all">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M7.16021 14.56C4.74021 16.18 4.74021 18.82 7.16021 20.43C9.91021 22.27 14.4202 22.27 17.1702 20.43C19.5902 18.81 19.5902 16.17 17.1702 14.56C14.4302 12.73 9.92021 12.73 7.16021 14.56Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </span>
+                      <div class="block__user-dropdown-wrapper flex hidden">
+                        <div class="block__user-dropdown-home transition-all flex">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.1605 10.87C12.0605 10.86 11.9405 10.86 11.8305 10.87C9.45055 10.79 7.56055 8.84 7.56055 6.44C7.56055 3.99 9.54055 2 12.0005 2C14.4505 2 16.4405 3.99 16.4405 6.44C16.4305 8.84 14.5405 10.79 12.1605 10.87Z" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.1605 10.87C12.0605 10.86 11.9405 10.86 11.8305 10.87C9.45055 10.79 7.56055 8.84 7.56055 6.44C7.56055 3.99 9.54055 2 12.0005 2C14.4505 2 16.4405 3.99 16.4405 6.44C16.4305 8.84 14.5405 10.79 12.1605 10.87Z" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.1607 14.56C4.7407 16.18 4.7407 18.82 7.1607 20.43C9.9107 22.27 14.4207 22.27 17.1707 20.43C19.5907 18.81 19.5907 16.17 17.1707 14.56C14.4307 12.73 9.9207 12.73 7.1607 14.56Z" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.1607 14.56C4.7407 16.18 4.7407 18.82 7.1607 20.43C9.9107 22.27 14.4207 22.27 17.1707 20.43C19.5907 18.81 19.5907 16.17 17.1707 14.56C14.4307 12.73 9.9207 12.73 7.1607 14.56Z" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>Trang cá nhân</span>
                         </div>
-                    </div>
+                        <div class="block__user-dropdown-logout transition-all flex">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.90039 7.56023C9.21039 3.96023 11.0604 2.49023 15.1104 2.49023H15.2404C19.7104 2.49023 21.5004 4.28023 21.5004 8.75023V15.2702C21.5004 19.7402 19.7104 21.5302 15.2404 21.5302H15.1104C11.0904 21.5302 9.24039 20.0802 8.91039 16.5402" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.90039 7.56023C9.21039 3.96023 11.0604 2.49023 15.1104 2.49023H15.2404C19.7104 2.49023 21.5004 4.28023 21.5004 8.75023V15.2702C21.5004 19.7402 19.7104 21.5302 15.2404 21.5302H15.1104C11.0904 21.5302 9.24039 20.0802 8.91039 16.5402" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.9991 12H3.61914" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.9991 12H3.61914" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="#A946F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.85 8.6499L2.5 11.9999L5.85 15.3499" stroke="black" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span>Đăng xuất</span>
+                        </div>
+                      </div>
+                  </div>
                 </div>
             </div>
             <div class="block__main-wrapper">
                 <hr />
                 <div class="flex flex-col block__main-wrapper--container">
-                    <div class="block__main-upper flex">
-                        <div class="block__main-upper-left flex flex-col">
-                            <div class="block__main-upper-left--first block__grade-btn--left transition-all main_shadow active-text">
-                                Điểm thành phần
-                                <span class="block__main-upper-left--first_underline"></span>
+                    <div class="block__main-upper block__schedule-upper flex">
+                        <div class="block__main-upper-left flex">
+                            <div class="block__schedule-wrapper-content--dropdown">
+                                <button type="button" class="flex items-center block__schedule-button--dropdown">
+                                    <span class="block__schedule-button--span1">
+                                      Tuần 24 (từ ngày 22/01/2024 đến ngày 28/01/2024) 
+                                    </span>
+                                    <span class="block__schedule-button--span2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 text-gray-400"><path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"></path></svg>
+                                    </span>
+                                </button>
+                                <ul class="main_shadow transition-all hidden">
+                                    <li class="transition-all">
+                                        <span>
+                                          Tuần 25 (từ ngày 29/01/2024 đến ngày 04/02/2024) 
+                                        </span>
+                                    </li>
+                                    <li class="transition-all">
+                                        <span>
+                                          Tuần 26 (từ ngày 05/02/2024 đến ngày 11/02/2024) 
+                                        </span>
+                                    </li>
+                                    <li class="transition-all">
+                                        <span>
+                                          Tuần 27 (từ ngày 12/02/2024 đến ngày 18/02/2024) 
+                                        </span>
+                                    </li>
+                                    <li class="transition-all">
+                                        <span>
+                                          Tuần 28 (từ ngày 19/02/2024 đến ngày 25/02/2024) 
+                                        </span>
+                                    </li>
+                                    <li class="transition-all">
+                                        <span>
+                                          Tuần 29 (từ ngày 26/02/2024 đến ngày 03/03/2024) 
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="block__main-upper--right block__grade-btn--right transition-all main_shadow">
-                                Thắc mắc điểm
-                                <span class="hidden block__main-upper-left--first_underline"></span>
+                            <div>
+                              <div class="pagination-button-group">
+                                <button class="pagination-button">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.99998 13.2802L5.65331 8.93355C5.13998 8.42021 5.13998 7.58021 5.65331 7.06688L9.99998 2.72021" stroke="#E02D2D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="pagination-button">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M5.93994 13.2802L10.2866 8.93355C10.7999 8.42021 10.7999 7.58021 10.2866 7.06688L5.93994 2.72021" stroke="#363DE3" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M5.93994 13.2802L10.2866 8.93355C10.7999 8.42021 10.7999 7.58021 10.2866 7.06688L5.93994 2.72021" stroke="white" stroke-opacity="0.95" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                </button>
+                              </div>
                             </div>
                         </div>
-                        <div class="block__main-upper-right flex flex-col">
-                            <div class="block__main-upper-right--item transition-all flex">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.25 7.5H16.75V5.5C16.75 3.5 16 2.5 13.75 2.5H10.25C8 2.5 7.25 3.5 7.25 5.5V7.5Z" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16 15.5V19.5C16 21.5 15 22.5 13 22.5H11C9 22.5 8 21.5 8 19.5V15.5H16Z" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M21 10.5V15.5C21 17.5 20 18.5 18 18.5H16V15.5H8V18.5H6C4 18.5 3 17.5 3 15.5V10.5C3 8.5 4 7.5 6 7.5H18C20 7.5 21 8.5 21 10.5Z" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17 15.5H15.79H7" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7 11.5H10" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>In</span>
-                            </div>
-                            <div class="block__main-upper-right--item transition-all flex">
-                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 11.5V17.5L11 15.5" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9 17.5L7 15.5" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Xuất Excel</span>
-                            </div>
+                        <div class="block__main-upper-right--item transition-all justify-content-center flex">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.3954 23.8332C18.0766 23.8332 22.7248 18.9582 22.7248 12.9998C22.7248 7.0415 18.0766 2.1665 12.3954 2.1665C6.71417 2.1665 2.06592 7.0415 2.06592 12.9998C2.06592 18.9582 6.71417 23.8332 12.3954 23.8332Z" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.26355 13H16.5271" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.3954 17.3332V8.6665" stroke="#4C4C4C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        <span>Thêm lịch</span>
                         </div>
                     </div>
+                    <div class="talbe-schedule-container">
+                      <table>
+                        <thead class="talbe-schedule__header">
+                          <tr>
+                            <th style="width: 60px;"></th>
+                            <th class="talbe-schedule__spacing"></th>
+                            <th class="talbe-schedule__head">Thứ 2</th>
+                            <th class="talbe-schedule__head">Thứ 3</th>
+                            <th class="talbe-schedule__head">Thứ 4</th>
+                            <th class="talbe-schedule__head">Thứ 5</th>
+                            <th class="talbe-schedule__head">Thứ 6</th>
+                            <th class="talbe-schedule__head">Thứ 7</th>
+                            <th class="talbe-schedule__head">CN</th>
+                            <th class="talbe-schedule__spacing"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr style="height: 20px;">
+                            <td class="talbe-schedule__time"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="7:00">8:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--morning">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Luật xa gần (MUL14131)</b>
+                                  </div>
+                                  <div>Nhóm: 01</div>
+                                  <div>Phòng: 203-A2</div>
+                                  <div>GV: Khuất Thị Thu Hà</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--morning">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Thiết kế sản phẩm ĐPT (MUL14132)</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 702-A2</div>
+                                  <div>GV: Hà Thị Hồng Ngân</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="9:00">10:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--morning">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Thiết kế giao diện người dùng (MUL14140)</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 405-A2</div>
+                                  <div>GV: Nguyễn Kim Ngân</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="11:00">12:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--morning">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Kỹ năng thuyết trình (MUL14131)</b>
+                                  </div>
+                                  <div>Nhóm: 17</div>
+                                  <div>Phòng: 801-A2</div>
+                                  <div>GV: Trần Hương Giang</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="13:00">14:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--evening">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Cơ sở tạo hình nâng cao (MUL14132)</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 702-A2</div>
+                                  <div>GV: Hà Thị Hồng Ngân</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--evening">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Nghệ thuật đồ họa chữ (MUL14136)</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 202-A2</div>
+                                  <div>GV: Hà Thị Hồng Ngân</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="15:00">16:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--evening">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Thiết kế hình động 2 (MUL14140)</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 203-A2</div>
+                                  <div>GV: Trần Quốc Trung</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="17:00">18:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--morning">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Thực hành Luật xa gần</b>
+                                  </div>
+                                  <div>Nhóm: 02</div>
+                                  <div>Phòng: 305-A2</div>
+                                  <div>GV: Khuất Thị Thu Hà</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="19:00">20:00</td>
+                            <td class="talbe-schedule__spacing"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__cell">
+                              <div class="table-schedule__card table-schedule__card--night">
+                                <div class="table-schedule__card__child">
+                                  <div>
+                                    <b>Họp lớp TKĐPT</b>
+                                  </div>
+                                  <div>Nhóm: 01</div>
+                                  <div>Phòng: Google Meet</div>
+                                  <div>GV: Trần Quốc Trung</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="talbe-schedule__cell"></td>
+                            <td class="talbe-schedule__spacing"></td>
+                          </tr>
+                          <tr>
+                            <td class="talbe-schedule__time" data-time="21:00"></td>
+                          </tr>
+                          <tr style="height: 40px;">
+                            <td class="talbe-schedule__time"></td>  
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <ul class="view-mode">
+                      <li class="view-mode--active flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#E02D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#E02D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Lịch học
+                      </li>
+                      <li class="view-mode--active flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#E02D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#E02D2D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Sự kiện chung
+                      </li>
+                      <li class="flex">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#8e8e8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#8e8e8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Sự kiện cá nhân
+                      </li>
+                    </ul>
                 </div>
             </div>
         </div>

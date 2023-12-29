@@ -238,6 +238,11 @@
   .card-area .card-list {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .block__schedule-upper {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1280px) {
