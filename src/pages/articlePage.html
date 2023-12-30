@@ -8,7 +8,7 @@
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/proof.css">
+    <link rel="stylesheet" href="../styles/article.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <script type="module" src="../js/main.js" defer></script>
   </head>
@@ -156,7 +156,7 @@
                     <hr />
                 </h4>
             </div>
-            <a href="./articlePage.html" class="block__sidebar-home--link2 transition-all" data-toggle="tooltip" title="Tin tức" data-placement="right">
+            <a href="./articlePage.html" class="block__sidebar-home--link2 transition-all bg-white" data-toggle="tooltip" title="Tin tức" data-placement="right">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M22 16.74V4.67058C22 3.47064 21.02 2.58068 19.83 2.68068H19.77C17.67 2.86067 14.48 3.93062 12.7 5.05056L12.53 5.16056C12.24 5.34055 11.76 5.34055 11.47 5.16056L11.22 5.01056C9.44 3.90062 6.26 2.84067 4.16 2.67068C2.97 2.57068 2 3.47064 2 4.66058V16.74C2 17.6999 2.78 18.5999 3.74 18.7199L4.03 18.7599C6.2 19.0499 9.55 20.1498 11.47 21.1998L11.51 21.2198C11.78 21.3698 12.21 21.3698 12.47 21.2198C14.39 20.1598 17.75 19.0499 19.93 18.7599L20.26 18.7199C21.22 18.5999 22 17.6999 22 16.74Z" stroke="white" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -171,7 +171,7 @@
                     Tin tức
                 </span>
             </a>
-            <div class="block__sidebar-home--link2 transition-all sidebar-dropdown" style="cursor: pointer; background-color: #fff;">
+            <div class="block__sidebar-home--link2 transition-all sidebar-dropdown" style="cursor: pointer;">
                 <div class="sidebar-dropdown-upper flex">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.25977 11.0201V15.9899C4.25977 17.8098 4.25977 17.8098 5.97977 18.9698L10.7098 21.6996C11.4198 22.1096 12.5798 22.1096 13.2898 21.6996L18.0198 18.9698C19.7398 17.8098 19.7398 17.8098 19.7398 15.9899V11.0201C19.7398 9.20023 19.7398 9.20023 18.0198 8.04028L13.2898 5.31041C12.5798 4.90043 11.4198 4.90043 10.7098 5.31041L5.97977 8.04028C4.25977 9.20023 4.25977 9.20023 4.25977 11.0201Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -233,7 +233,7 @@
         </div>
         <div class="block__main-container">
             <div class="block__main-header flex items-center">
-                <h1 class="block__main-header--title">Điểm rèn luyện</h1>
+                <h1 class="block__main-header--title">Tin tức</h1>
                 <div class="block__main-header-logo flex main_shadow">
                     <span class="block_main-header-logo-wrapper transition-all">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,324 +281,88 @@
             </div>
             <div class="block__main-wrapper">
                 <hr />
-                <div class="flex flex-col block__main-wrapper--container">
-                    <div class="content">
-                        <p class="content__heading">Khai báo minh chứng</p>
-                        <div class="content__info">
-                          <div class="subnav">
-                            <p class="subnav__caption">Loại minh chứng</p>
-                            <div class="subnav__item_proof subnav__item--selected">
-                              <span class="subnav__item-label"
-                                >Tiêu chí 2.1.2: Khai báo nội ngoại trú</span
-                              >
-                              <span class="subnav__item-btn"
-                                ><svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M8 12H16"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M12 16V8"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
-                              </span>
+                <div class="flex flex-col">
+                    <div class="flex block__article-upper-wrapper">
+                        <div class="flex flex-col block__article-upper-wrapper-left">
+                            <img src="../img/article1.png" alt="article" class="transition-all">
+                            <div>
+                                <h3>Học viện Công nghệ Bưu chính Viễn thông hoàn thành xuất sắc các nhiệm vụ năm 2023 và các mục tiêu chiến lược giai đoạn 2020 – 2025</h3>
+                                <p>Ngày đăng: 20/12/2023</p>
                             </div>
-                            <div class="subnav__item_proof">
-                              <span class="subnav__item-label"
-                                >Tiêu chí 3.2: Tham gia công tác xã hội</span
-                              >
-                              <span class="subnav__item-btn"
-                                ><svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M8 12H16"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M12 16V8"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                            <div class="subnav__item_proof">
-                              <span class="subnav__item-label"
-                                >Tiêu chí 3.3: Tuyên truyền tích cực về Trường/Khoa</span
-                              >
-                              <span class="subnav__item-btn"
-                                ><svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M8 12H16"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M12 16V8"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                            <div class="subnav__item_proof">
-                              <span class="subnav__item-label"
-                                >Tiêu chí 5.3: Thành tích đặc biệt</span
-                              >
-                              <span class="subnav__item-btn"
-                                ><svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                >
-                                  <path
-                                    d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M8 12H16"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                  <path
-                                    d="M12 16V8"
-                                    stroke="#4C4C4C"
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </div>
-              
-                          <!-- Tiêu chí 2.1.2 -->
-                          <div class="decs_proof decs-2.1.2 decs--selected">
-                            <div class="decs__caption">
-                              <span class="decs__caption-left"
-                                >Danh sách khai báo nội ngoại trú
-                              </span>
-                              <span class="decs__caption-right">Tổng số: 2</span>
-                            </div>
-                            <div class="decs__table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>STT</th>
-                                    <th>Ngày khai báo</th>
-                                    <th>Nơi ở hiện nay</th>
-                                    <th>Liên hệ</th>
-                                    <th>Điểm</th>
-                                    <th>Trạng thái</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>12/10/2023</td>
-                                    <td>Ngõ 2 Ao Sen</td>
-                                    <td>0348283929</td>
-                                    <td>3</td>
-                                    <td class="decs__cell--checked">Đã xét</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>20/10/2023</td>
-                                    <td>10 Trần Phú</td>
-                                    <td>0483928493</td>
-                                    <td>3</td>
-                                    <td class="decs__cell--unchecked">Chưa xét</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-              
-                          <!-- Tiêu chí 3.2 -->
-                          <div class="decs_proof decs-3.2">
-                            <div class="decs__caption">
-                              <span class="decs__caption-left"
-                                >Danh sách tham gia công tác xã hội
-                              </span>
-                              <span class="decs__caption-right">Tổng số: 2</span>
-                            </div>
-                            <div class="decs__table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>STT</th>
-                                    <th class="decs__cell--size-large">
-                                      Tên công tác xã hội
-                                    </th>
-                                    <th>Thời gian</th>
-                                    <th>Đường dẫn</th>
-                                    <th>Tập tin</th>
-                                    <th>Điểm</th>
-                                    <th>Trạng thái</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>Hiến máu nhân đạo</td>
-                                    <td>02/03/2023</td>
-                                    <td><span class="decs__cell--link">Link</span></td>
-                                    <td>Không có</td>
-                                    <td>5</td>
-                                    <td class="decs__cell--checked">Đã xét</td>
-                                  </tr>
-                                  <tr>
-                                    <td>2</td>
-                                    <td>Công tác xã hội khác</td>
-                                    <td>14/06/2023</td>
-                                    <td>Không có</td>
-                                    <td><span class="decs__cell--file">.jpg</span></td>
-                                    <td>5</td>
-                                    <td class="decs__cell--unchecked">Chưa xét</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-              
-                          <!-- Tiêu chí 3.3 -->
-                          <div class="decs_proof decs-3.2">
-                            <div class="decs__caption">
-                              <span class="decs__caption-left"
-                                >Danh sách tuyên truyền tích cực về Trường/khoa
-                              </span>
-                              <span class="decs__caption-right">Tổng số: 1</span>
-                            </div>
-                            <div class="decs__table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>STT</th>
-                                    <th class="decs__cell--size-large">Tên hoạt động</th>
-                                    <th class="decs__cell--size-large">Tên sự kiện</th>
-                                    <th>Thời gian</th>
-                                    <th>Đường dẫn</th>
-                                    <th>Tập tin</th>
-                                    <th>Điểm</th>
-                                    <th>Trạng thái</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>Đăng bài trên Facebook</td>
-                                    <td>Connect to P-Gen</td>
-                                    <td>03/02/2023</td>
-                                    <td><span class="decs__cell--link">Link</span></td>
-                                    <td>Không có</td>
-                                    <td>4</td>
-                                    <td class="decs__cell--checked">Đã xét</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
-              
-                          <!-- Tiêu chí 5.3 -->
-                          <div class="decs_proof decs-3.2">
-                            <div class="decs__caption">
-                              <span class="decs__caption-left"
-                                >Danh sách thành tích đặc biệt
-                              </span>
-                              <span class="decs__caption-right">Tổng số: 1</span>
-                            </div>
-                            <div class="decs__table">
-                              <table>
-                                <thead>
-                                  <tr>
-                                    <th>STT</th>
-                                    <th>Cấp đạt giải</th>
-                                    <th class="decs__cell--size-large">Nội dung</th>
-                                    <th>Thời gian</th>
-                                    <th>Đường dẫn</th>
-                                    <th>Tập tin</th>
-                                    <th>Điểm</th>
-                                    <th>Trạng thái</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>Tỉnh</td>
-                                    <td>Giải nhất môn Đại số</td>
-                                    <td>03/02/2023</td>
-                                    <td><span class="decs__cell--link">Link</span></td>
-                                    <td>Không có</td>
-                                    <td>4</td>
-                                    <td class="decs__cell--unchecked">Chưa xét</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                        <div class="flex flex-col block__article-upper-wrapper-right">
+                            <div class="flex block__article-upper-items-right">
+                                <img src="../img/article1_1.png" alt="article">
+                                <div>
+                                    <h5>Học viện Công nghệ Bưu chính Viễn thông hoàn thành xuất sắc các nhiệm vụ năm 2023 và các mục tiêu chiến lược giai đoạn 2020 – 2025</h5>
+                                    <p>20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="flex block__article-upper-items-right">
+                                <img src="../img/article2_1.png" alt="article">
+                                <div>
+                                    <h5>Học viện trình bày tham luận tại Hội nghị tổng kết 10 năm thực hiện Nghị quyết 29-NQ/TW về đổi mới căn bản, toàn diện giáo dục và đào tạo</h5>
+                                    <p>21/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="flex block__article-upper-items-right">
+                                <img src="../img/article3_1.png" alt="article">
+                                <div>
+                                    <h5>PTIT thúc đẩy hợp tác về đào tạo sau đại học với Viện Khoa học và Công nghệ Nhật Bản (JAIST)</h5>
+                                    <p>20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="flex block__article-upper-items-right">
+                                <img src="../img/article4_1.png" alt="article">
+                                <div>
+                                    <h5>Học viện Công nghệ Bưu chính Viễn thông ký kết Thỏa thuận đảm bảo tính bền vững của Dự án Giám sát xu hướng việc làm của sinh viên tốt nghiệp tại Việt Nam – MOTIVE</h5>
+                                    <p>20/12/2023</p>
+                                </div>
+                            </div>
+                            <div class="block__article-upper-btn-right transition-all">
+                                <span class="flex">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block__article-lower-wrapper">
+                        <div class="flex flex-col block__article-lower-items">
+                            <img src="../img/article1_2.png" alt="article">
+                            <div>
+                                <h4>Học viện Công nghệ Bưu chính Viễn thông hoàn thành xuất sắc các nhiệm vụ năm 2023 và các mục tiêu chiến lược giai đoạn 2020 – 2025</h4>
+                                <p>20/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col block__article-lower-items">
+                            <img src="../img/article2_2.png" alt="article">
+                            <div>
+                                <h4>Học viện trình bày tham luận tại Hội nghị tổng kết 10 năm thực hiện Nghị quyết 29-NQ/TW về đổi mới căn bản, toàn diện giáo dục và đào tạo</h4>
+                                <p>21/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col block__article-lower-items">
+                            <img src="../img/article3_2.png" alt="article">
+                            <div>
+                                <h4>PTIT thúc đẩy hợp tác về đào tạo sau đại học với Viện Khoa học và Công nghệ Nhật Bản (JAIST)</h4>
+                                <p>20/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col block__article-lower-items">
+                            <img src="../img/article4_2.png" alt="article">
+                            <div>
+                                <h4>Học viện Công nghệ Bưu chính Viễn thông ký kết Thỏa thuận đảm bảo tính bền vững của Dự án Giám sát xu hướng việc làm của sinh viên tốt nghiệp tại Việt Nam – MOTIVE</h4>
+                                <p>20/12/2023</p>
+                            </div>
+                        </div>
+                        <div class="flex inline__article-lower-next transition-all">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.11719 19.9201L15.6372 13.4001C16.4072 12.6301 16.4072 11.3701 15.6372 10.6001L9.11719 4.08008" stroke="#4C4C4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -16,19 +16,10 @@ const validateUser = (user)=>{
         return "Vui lòng nhập đầy đủ thông tin";
     }
 
-    if(user[0]!=='b'&&user[0]!=='e'){
-        return "Vui lòng nhập đúng định dạng tài khoản PTIT";
-    }
-    if(!Number.parseInt(user.substr(1,2))){
-        return "Vui lòng nhập đúng định dạng tài khoản PTIT";
-    }
+    const emailStuRegex = /^[A-Za-z]+\.[beBE][0-9]+[[A-Za-z]+[0-9]+@stu\.ptit\.edu\.vn$/;
 
-    const hasNumber = /\d+/g;
-    if(hasNumber.test(user.substr(3,4))){
-        return "Vui lòng nhập đúng định dạng tài khoản PTIT";
-    }
-    if(!Number.parseInt(user.substr(7,3))){
-        return "Vui lòng nhập đúng định dạng tài khoản PTIT";
+    if(!emailStuRegex.test(user)){
+        return "Vui lòng nhập đúng định dạng tài khoản PTIT"
     }
 
     return;

@@ -23,6 +23,7 @@ const programBtn = $('.block__program--left')
 const programIntroductBtn = $('.block__program--right')
 const dropdownSidebar = $('.sidebar-dropdown')
 const dropdownUser = $('.main__header-user')
+const articleImg = $('.block__article-upper-wrapper-left img')
 
 const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
@@ -75,6 +76,41 @@ if(inputCheckboxs){
             }
         })
     })
+}
+
+if(articleImg){
+    const srcLists = [
+        {
+            img:'../img/article1_2.png',
+            title:'Học viện Công nghệ Bưu chính Viễn thông hoàn thành xuất sắc các nhiệm vụ năm 2023 và các mục tiêu chiến lược giai đoạn 2020 – 2025',
+            date:'Ngày đăng: 20/12/2023'
+        },
+        {
+            img:'../img/article2_2.png',
+            title:'Học viện trình bày tham luận tại Hội nghị tổng kết 10 năm thực hiện Nghị quyết 29-NQ/TW về đổi mới căn bản, toàn diện giáo dục và đào tạo',
+            date:'Ngày đăng: 21/12/2023'
+        },
+        {
+            img:'../img/article3_2.png',
+            title:'PTIT thúc đẩy hợp tác về đào tạo sau đại học với Viện Khoa học và Công nghệ Nhật Bản (JAIST)',
+            date:'Ngày đăng: 20/12/2023'
+        },
+        {
+            img:'../img/article4_2.png',
+            title:'Học viện Công nghệ Bưu chính Viễn thông ký kết Thỏa thuận đảm bảo tính bền vững của Dự án Giám sát xu hướng việc làm của sinh viên tốt nghiệp tại Việt Nam – MOTIVE',
+            date:'Ngày đăng: 20/12/2023'
+        },
+    ]
+    
+    let i=0;
+    function nextImage() {
+        articleImg.src = srcLists[i].img;
+        $('.block__article-upper-wrapper-left h3').innerHTML = srcLists[i].title
+        $('.block__article-upper-wrapper-left p').innerHTML = srcLists[i].date
+        i = (i + 1) % srcLists.length;
+        setTimeout(nextImage, 5000);
+    }
+    nextImage();
 }
 
 if(scheduleDropdownBtn){
