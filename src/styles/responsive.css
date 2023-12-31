@@ -271,11 +271,19 @@
   .block__article-lower-wrapper {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .content_wrapper .bg {
+    display: flex;
+  }
 }
 
 @media (min-width: 1280px) {
   .block__grade-main-container--footer-wrapper {
     gap: 4.75rem;
     width: 80%;
+  }
+
+  .screen .bg__img {
+    width: 70%;
   }
 }
