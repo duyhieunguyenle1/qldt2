@@ -1,5 +1,9 @@
 if(!sessionStorage.getItem('accessToken')){
-    window.location.replace('./pages/loginPage.html')
+    if(window.location.pathname==='/src/index.html'){
+        window.location.replace('./pages/loginPage.html')
+    }else{
+        window.location.replace('./loginPage.html')
+    }
 }
 
 const $=document.querySelector.bind(document)
@@ -12,6 +16,7 @@ const btnListEvent = $$(".subnav__item_event");
 const decsListEvent = $$(".decs_event");
 const btnListProof = $$(".subnav__item_proof");
 const decsListProof = $$(".decs_proof");
+const articleLists = $$('.block__article-upper-items-right');
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
@@ -24,6 +29,20 @@ const programIntroductBtn = $('.block__program--right')
 const dropdownSidebar = $('.sidebar-dropdown')
 const dropdownUser = $('.main__header-user')
 const articleImg = $('.block__article-upper-wrapper-left img')
+const container = $('.min-h-screen')
+
+let chatBotPage;
+if(window.location.pathname==='/src/index.html'){
+    chatBotPage='./img/chatbot.png'
+}else{
+    chatBotPage='../img/chatbot.png'
+}
+
+const chatBot = document.createElement('div')
+chatBot.innerHTML=`<div class="chat_bot">
+<img src="${chatBotPage}" alt="chatBot">
+</div>`
+container.appendChild(chatBot)
 
 const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
@@ -78,7 +97,7 @@ if(inputCheckboxs){
     })
 }
 
-if(articleImg){
+if(articleImg&&articleLists){
     const srcLists = [
         {
             img:'../img/article1_2.png',
@@ -103,10 +122,20 @@ if(articleImg){
     ]
     
     let i=0;
+
+    const updateContent = (index)=>{
+        articleImg.src = srcLists[index].img;
+        $('.block__article-upper-wrapper-left h3').innerHTML = srcLists[index].title
+        $('.block__article-upper-wrapper-left p').innerHTML = srcLists[index].date
+    }
+
+    articleLists.forEach((list,ind)=>list.addEventListener('click',()=>{
+        updateContent(ind)
+        i = (ind + 1) % articleLists.length;
+    }))
+
     function nextImage() {
-        articleImg.src = srcLists[i].img;
-        $('.block__article-upper-wrapper-left h3').innerHTML = srcLists[i].title
-        $('.block__article-upper-wrapper-left p').innerHTML = srcLists[i].date
+        updateContent(i)
         i = (i + 1) % srcLists.length;
         setTimeout(nextImage, 5000);
     }

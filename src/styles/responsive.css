@@ -29,6 +29,10 @@
   .block__article-lower-wrapper {
     margin-top: 1rem;
   }
+
+  .news-item .news-item__img {
+    margin-right: 1rem;
+  }
 }
 
 @media (min-width: 640px) {

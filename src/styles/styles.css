@@ -53,6 +53,7 @@ button {
 
 .min-h-screen {
   min-height: 100vh;
+  position: relative;
 }
 
 .main_shadow {
@@ -86,6 +87,20 @@ button {
 
 a {
   text-decoration: none;
+}
+
+/* chat bot */
+.chat_bot {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 5rem;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.chat_bot img {
+  width: 100%;
 }
 
 /* sidebar */
@@ -510,7 +525,6 @@ a.block__sidebar-home--link2 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .news-item .news-item__label {
@@ -528,7 +542,8 @@ a.block__sidebar-home--link2 span {
   font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 200px;
+  width: 100%;
+  flex: 1;
 }
 
 .news-item .news-item__date {

@@ -24,11 +24,12 @@ body {
 }
 
 .screen .bg__img {
-  height: 90%;
-  width: 95%;
+  height: 60%;
+  width: 35%;
   position: absolute;
-  right: -3%;
-  object-fit: cover;
+  right: 8%;
+  top: 10%;
+  background-size: cover;
   background-position: right;
 }
 
@@ -37,7 +38,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100px;
-  background-color: #a62eff;
+  background-color: #868bee;
 }
 
 .screen .login {
@@ -48,7 +49,7 @@ body {
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.75rem;
+  gap: 1.25rem;
   border-radius: 24px;
   border: 10px solid rgba(163, 177, 249, 0.42);
   background: #fff;
