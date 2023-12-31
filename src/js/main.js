@@ -1,5 +1,5 @@
 if(!sessionStorage.getItem('accessToken')){
-    if(window.location.pathname==='/src/index.html'){
+    if(window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html'){
         window.location.replace('./pages/loginPage.html')
     }else{
         window.location.replace('./loginPage.html')
@@ -32,7 +32,7 @@ const articleImg = $('.block__article-upper-wrapper-left img')
 const container = $('.min-h-screen')
 
 let chatBotPage;
-if(window.location.pathname==='/src/index.html'){
+if(window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html'){
     chatBotPage='./img/chatbot.png'
 }else{
     chatBotPage='../img/chatbot.png'
@@ -54,11 +54,15 @@ dropdownUser.addEventListener('click',()=>{
 
 $('.block__user-dropdown-logout').addEventListener('click',()=>{
     sessionStorage.removeItem('accessToken')
-    window.location.replace('./pages/loginPage.html')
+    if((window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html')){
+        window.location.replace('./pages/loginPage.html')
+    }else{
+        window.location.replace('./loginPage.html')
+    }
 })
 
 let eventPage,proofPage,transcriptPage;
-if(window.location.pathname==='/src/index.html'){
+if((window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html')){
     eventPage='./pages/eventPage.html'
     proofPage='./pages/proofPage.html'
     transcriptPage='./pages/transcriptPage.html'
