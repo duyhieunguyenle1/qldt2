@@ -20,6 +20,10 @@
   color: var(--sub-text);
 }
 
+.rounded-xl {
+  border-radius: 1rem;
+}
+
 .block__main-upper {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;

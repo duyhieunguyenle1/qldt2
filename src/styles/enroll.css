@@ -333,6 +333,8 @@ th:last-child {
   font-size: 14px;
   color: #4c4c4c;
   padding: 0.25rem;
+  min-width: 53px;
+  text-align: center;
 }
 
 .block__enroll-wrapper-content-right .block__enroll-days {
@@ -358,7 +360,8 @@ th:last-child {
   border-radius: 1rem;
   font-weight: 700;
   font-size: 14px;
-  min-width: 45px;
+  min-width: 53px;
+  text-align: center;
 }
 
 .block__enroll-wrapper-content-right tbody .inline__enroll-content-img {

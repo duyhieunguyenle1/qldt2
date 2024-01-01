@@ -33,6 +33,10 @@
   width: 100%;
 }
 
+.block__transcript-table-wrapper thead tr {
+  background-color: #fceaea;
+}
+
 .block__transcript-table-wrapper td,
 .block__transcript-table-wrapper th {
   padding: 1rem 0.5rem;
