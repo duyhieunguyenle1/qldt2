@@ -13,7 +13,7 @@ debtTuition.innerHTML=`<div class="table__tuition table--not-submited">
     <span>Tổng chưa nộp: </span>
     <span class="table__sum--red">5.200.000đ</span>
   </div>
-  <div class="table__sum-right">Tổng số: 3</div>
+  <div class="table__sum-right">Tổng số: 1</div>
 </div>
 <div class="table-main">
   <table>

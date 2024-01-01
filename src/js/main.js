@@ -17,6 +17,7 @@ const decsListEvent = $$(".decs_event");
 const btnListProof = $$(".subnav__item_proof");
 const decsListProof = $$(".decs_proof");
 const articleLists = $$('.block__article-upper-items-right');
+const articleLowerLists = Array.from($$('.block__article-lower-items'));
 
 const examDropdownWrapper = $('.block__exam-wrapper-content--dropdown ul')
 const examDropdownBtn = $('.block__exam-button--dropdown')
@@ -30,6 +31,8 @@ const dropdownSidebar = $('.sidebar-dropdown')
 const dropdownUser = $('.main__header-user')
 const articleImg = $('.block__article-upper-wrapper-left img')
 const container = $('.min-h-screen')
+const nextArticleBtn = $('.inline__article-lower-next')
+const backArticleBtn = $('.inline__article-lower-back')
 
 let chatbotImg;
 if(window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html'){
@@ -185,6 +188,24 @@ if(articleImg&&articleLists){
         setTimeout(nextImage, 5000);
     }
     nextImage();
+
+    let currPage = 0;
+    let itemPerPage = 4;
+    nextArticleBtn.addEventListener('click',()=>{
+        if(articleLowerLists[currPage+itemPerPage]){
+            articleLowerLists[currPage].classList.add('hidden')
+            articleLowerLists[currPage+itemPerPage].classList.remove('hidden')
+            currPage++;
+        }   
+    })
+
+    backArticleBtn.addEventListener('click',()=>{
+        if(articleLowerLists[currPage-1]){
+            articleLowerLists[currPage+itemPerPage-1].classList.add('hidden')
+            articleLowerLists[currPage-1].classList.remove('hidden')
+            currPage--;
+        }   
+    })
 }
 
 if(scheduleDropdownBtn){
