@@ -191,6 +191,26 @@ if(articleImg&&articleLists){
 
     let currPage = 0;
     let itemPerPage = 4;
+
+    window.addEventListener('resize',()=>{
+        if(window.innerWidth<768){
+            itemPerPage=1;
+            currPage = 0;
+            articleLowerLists.forEach((item,index)=>{
+                if(index!==0){
+                    articleLowerLists[index].classList.add('hidden')
+                }
+            })
+        }else{
+            itemPerPage=4;
+            currPage = 0;
+            articleLowerLists.forEach((item,index)=>{
+                if(index<4)articleLowerLists[index].classList.remove('hidden')
+                else articleLowerLists[index].classList.add('hidden')
+            })
+        }
+    })
+
     nextArticleBtn.addEventListener('click',()=>{
         if(articleLowerLists[currPage+itemPerPage]){
             articleLowerLists[currPage].classList.add('hidden')
@@ -198,7 +218,7 @@ if(articleImg&&articleLists){
             currPage++;
         }   
     })
-
+    
     backArticleBtn.addEventListener('click',()=>{
         if(articleLowerLists[currPage-1]){
             articleLowerLists[currPage+itemPerPage-1].classList.add('hidden')
@@ -206,6 +226,7 @@ if(articleImg&&articleLists){
             currPage--;
         }   
     })
+
 }
 
 if(scheduleDropdownBtn){

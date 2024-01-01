@@ -121,8 +121,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #fceaea;
-  border-radius: 16px;
-  padding: 12px 16px;
+  border-radius: 1rem;
+  padding: 1rem;
   min-width: 377px;
 }
 
