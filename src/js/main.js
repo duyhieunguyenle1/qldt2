@@ -31,18 +31,59 @@ const dropdownUser = $('.main__header-user')
 const articleImg = $('.block__article-upper-wrapper-left img')
 const container = $('.min-h-screen')
 
-let chatBotPage;
+let chatbotImg;
 if(window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html'){
-    chatBotPage='./img/chatbot.png'
+    chatbotImg='./img/chatbot.png'
 }else{
-    chatBotPage='../img/chatbot.png'
+    chatbotImg='../img/chatbot.png'
 }
 
-const chatBot = document.createElement('div')
-chatBot.innerHTML=`<div class="chat_bot">
-<img src="${chatBotPage}" alt="chatBot">
-</div>`
-container.appendChild(chatBot)
+let chatbotPage;
+if(window.location.pathname==='/src/index.html'||window.location.pathname==='/qldt2/src/index.html'){
+    chatbotPage='./pages/chatPage.html'
+}else{
+    chatbotPage='./chatPage.html'
+}
+
+if(window.location.pathname!=='/src/pages/chatPage.html'||window.location.pathname==='/qldt2/src/pages/chatPage.html'){    
+    const chatBot = document.createElement('div')
+    chatBot.innerHTML=`<div class="chat_bot">
+    <a href="${chatbotPage}">
+    <img src="${chatbotImg}" alt="chatBot">
+    </a>
+    <span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.16992 14.8299L14.8299 9.16992" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.16992 14.8299L14.8299 9.16992" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.8299 14.8299L9.16992 9.16992" stroke="#363DE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.8299 14.8299L9.16992 9.16992" stroke="white" stroke-opacity="0.4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </span>
+    </div>`
+    container.appendChild(chatBot)
+
+    const chatBotMini = document.createElement('div')
+    chatBotMini.innerHTML=`<div class="hidden chatbot_mini">
+    Ami</div>
+    `
+    container.appendChild(chatBotMini)
+
+    const chatBotClose = $('.chat_bot span')
+    const chatBotMiniToggle = $('.chatbot_mini')
+    if(chatBotClose){
+        chatBotClose.addEventListener('click',()=>{
+            chatBotClose.parentNode.classList.add('hidden')
+            chatBotMiniToggle.classList.remove('hidden')
+        })
+
+        chatBotMiniToggle.addEventListener('click',()=>{
+            chatBotClose.parentNode.classList.remove('hidden')
+            chatBotMiniToggle.classList.add('hidden')
+        })
+    }
+}
 
 const notiHeaderNumber = document.createElement('div')
 notiHeaderNumber.innerHTML=`<span class="main__header-noti--number transition-all flex">5</span>`
